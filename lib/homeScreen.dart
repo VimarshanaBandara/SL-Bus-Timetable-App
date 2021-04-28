@@ -1,3 +1,4 @@
+import 'package:bus_timetable/destinations/colombo_kandy.dart';
 import 'package:flutter/material.dart';
 class HomePage extends StatefulWidget {
   @override
@@ -17,12 +18,12 @@ class _HomePageState extends State<HomePage> {
           width: MediaQuery.of(context).size.width,
 
           decoration: BoxDecoration(
-              color: const Color(0xff7c94b6),
-            image: DecorationImage(
-              image: AssetImage('images/bg1.jpg'),
-              fit: BoxFit.cover,
+              color: Colors.black38,
+          //  image: DecorationImage(
+             // image: AssetImage('images/bg1.jpg'),
+             // fit: BoxFit.cover,
 
-            )
+           // )
           ),
 
           child: Column(
@@ -64,8 +65,13 @@ class _HomePageState extends State<HomePage> {
                             ],
                           ),
                         ),
-                        Icon(Icons.arrow_forward_ios,
-                            color: Colors.blue),
+                        IconButton(
+                          icon: Icon(Icons.arrow_forward_ios,
+                              color: Colors.blue),
+                           onPressed: (){
+                            Navigator.push(context, MaterialPageRoute(builder: (context)=>ColomboKandy()));
+                           },
+                        )
                       ],
                     ),
                   ),
