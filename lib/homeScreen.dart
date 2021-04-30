@@ -1,4 +1,11 @@
+import 'package:bus_timetable/destinations/colombo_galle.dart';
 import 'package:bus_timetable/destinations/colombo_kandy.dart';
+import 'package:bus_timetable/destinations/colombo_kegalle.dart';
+import 'package:bus_timetable/destinations/colombo_matara.dart';
+import 'package:bus_timetable/destinations/colombo_mawanella.dart';
+import 'package:bus_timetable/destinations/kegalle_colombo.dart';
+import 'package:bus_timetable/destinations/matara_colombo.dart';
+import 'package:bus_timetable/destinations/mawanella_colombo.dart';
 import 'package:flutter/material.dart';
 class HomePage extends StatefulWidget {
   @override
@@ -158,8 +165,10 @@ class _HomePageState extends State<HomePage> {
                             ],
                           ),
                         ),
-                        Icon(Icons.arrow_forward_ios,
-                            color: Colors.blue),
+                        IconButton(
+                          icon: Icon(Icons.arrow_forward_ios,color: Colors.blue),
+                          onPressed:(){Navigator.push(context, MaterialPageRoute(builder: (context)=>ColomboKegalle()));}
+                        )
                       ],
                     ),
                   ),
@@ -202,8 +211,10 @@ class _HomePageState extends State<HomePage> {
                             ],
                           ),
                         ),
-                        Icon(Icons.arrow_forward_ios,
-                            color: Colors.blue),
+                        IconButton(
+                            icon: Icon(Icons.arrow_forward_ios,color: Colors.blue),
+                            onPressed:(){Navigator.push(context, MaterialPageRoute(builder: (context)=>KegalleColombo()));}
+                        )
                       ],
                     ),
                   ),
@@ -246,8 +257,10 @@ class _HomePageState extends State<HomePage> {
                             ],
                           ),
                         ),
-                        Icon(Icons.arrow_forward_ios,
-                            color: Colors.blue),
+                        IconButton(
+                            icon: Icon(Icons.arrow_forward_ios,color: Colors.blue),
+                            onPressed:(){Navigator.push(context, MaterialPageRoute(builder: (context)=>ColomboMawanella()));}
+                        )
                       ],
                     ),
                   ),
@@ -290,8 +303,10 @@ class _HomePageState extends State<HomePage> {
                             ],
                           ),
                         ),
-                        Icon(Icons.arrow_forward_ios,
-                            color: Colors.blue),
+                        IconButton(
+                            icon: Icon(Icons.arrow_forward_ios,color: Colors.blue),
+                            onPressed:(){Navigator.push(context, MaterialPageRoute(builder: (context)=>MawanellaColombo()));}
+                        )
                       ],
                     ),
                   ),
@@ -334,8 +349,10 @@ class _HomePageState extends State<HomePage> {
                             ],
                           ),
                         ),
-                        Icon(Icons.arrow_forward_ios,
-                            color: Colors.blue),
+                        IconButton(
+                            icon: Icon(Icons.arrow_forward_ios,color: Colors.blue),
+                            onPressed:(){Navigator.push(context, MaterialPageRoute(builder: (context)=>ColomboMatara()));}
+                        )
                       ],
                     ),
                   ),
@@ -378,8 +395,10 @@ class _HomePageState extends State<HomePage> {
                             ],
                           ),
                         ),
-                        Icon(Icons.arrow_forward_ios,
-                            color: Colors.blue),
+                        IconButton(
+                            icon: Icon(Icons.arrow_forward_ios,color: Colors.blue),
+                            onPressed:(){Navigator.push(context, MaterialPageRoute(builder: (context)=>MataraColombo()));}
+                        )
                       ],
                     ),
                   ),
@@ -422,8 +441,10 @@ class _HomePageState extends State<HomePage> {
                             ],
                           ),
                         ),
-                        Icon(Icons.arrow_forward_ios,
-                            color: Colors.blue),
+                        IconButton(
+                            icon: Icon(Icons.arrow_forward_ios,color: Colors.blue),
+                            onPressed:(){Navigator.push(context, MaterialPageRoute(builder: (context)=>ColomboGalle()));}
+                        )
                       ],
                     ),
                   ),

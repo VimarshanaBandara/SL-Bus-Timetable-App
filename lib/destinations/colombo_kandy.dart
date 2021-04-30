@@ -1,3 +1,4 @@
+import 'package:bus_timetable/homeScreen.dart';
 import 'package:flutter/material.dart';
 class ColomboKandy extends StatefulWidget {
   @override
@@ -13,7 +14,9 @@ class _ColomboKandyState extends State<ColomboKandy> {
           backgroundColor: Colors.deepPurpleAccent,
           leading: IconButton(
             icon: Icon(Icons.arrow_back_ios_outlined,color: Colors.white,size: 30.0,),
-            onPressed: (){},
+            onPressed: (){
+              Navigator.push(context, MaterialPageRoute(builder: (context)=>HomePage()));
+            },
           ),
         ),
         backgroundColor: Colors.deepPurpleAccent,
