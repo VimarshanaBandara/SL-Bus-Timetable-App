@@ -1,8 +1,12 @@
 import 'package:bus_timetable/destinations/ambalangoda_colombo.dart';
+import 'package:bus_timetable/destinations/ampara_kandy.dart';
 import 'package:bus_timetable/destinations/anamaduwa_colombo.dart';
+import 'package:bus_timetable/destinations/colomba_katharagama.dart';
 import 'package:bus_timetable/destinations/colombo_ambalangoda.dart';
 import 'package:bus_timetable/destinations/colombo_anamaduwa.dart';
+import 'package:bus_timetable/destinations/colombo_elpitiya.dart';
 import 'package:bus_timetable/destinations/colombo_galle.dart';
+import 'package:bus_timetable/destinations/colombo_gampola.dart';
 import 'package:bus_timetable/destinations/colombo_halawatha.dart';
 import 'package:bus_timetable/destinations/colombo_jaffna.dart';
 import 'package:bus_timetable/destinations/colombo_kandy.dart';
@@ -11,14 +15,30 @@ import 'package:bus_timetable/destinations/colombo_kurunegala.dart';
 import 'package:bus_timetable/destinations/colombo_matara.dart';
 import 'package:bus_timetable/destinations/colombo_mawanella.dart';
 import 'package:bus_timetable/destinations/colombo_vavuniya.dart';
+import 'package:bus_timetable/destinations/elpitiya_colombo.dart';
 import 'package:bus_timetable/destinations/galle_colombo.dart';
+import 'package:bus_timetable/destinations/gampola_colombo.dart';
 import 'package:bus_timetable/destinations/halawatha_colombo.dart';
 import 'package:bus_timetable/destinations/jaffna_colombo.dart';
+import 'package:bus_timetable/destinations/kandy_ampara.dart';
+import 'package:bus_timetable/destinations/kandy_kegalle.dart';
+import 'package:bus_timetable/destinations/kandy_mawanella.dart';
+import 'package:bus_timetable/destinations/kandy_panadura.dart';
+import 'package:bus_timetable/destinations/kandy_vavuniya.dart';
+import 'package:bus_timetable/destinations/katharagama_colombo.dart';
 import 'package:bus_timetable/destinations/kegalle_colombo.dart';
+import 'package:bus_timetable/destinations/kegalle_kandy.dart';
 import 'package:bus_timetable/destinations/kurunegala_colombo.dart';
 import 'package:bus_timetable/destinations/matara_colombo.dart';
+import 'package:bus_timetable/destinations/matara_monaragala.dart';
+import 'package:bus_timetable/destinations/matara_panadura.dart';
 import 'package:bus_timetable/destinations/mawanella_colombo.dart';
+import 'package:bus_timetable/destinations/mawanella_kandy.dart';
+import 'package:bus_timetable/destinations/monaragala_matara.dart';
+import 'package:bus_timetable/destinations/panadura_kandy.dart';
+import 'package:bus_timetable/destinations/panadura_matara.dart';
 import 'package:bus_timetable/destinations/vavuniya_colombo.dart';
+import 'package:bus_timetable/destinations/vavuniya_kandy.dart';
 import 'package:flutter/material.dart';
 class HomePage extends StatefulWidget {
   @override
@@ -1186,8 +1206,10 @@ class _HomePageState extends State<HomePage> {
                             ],
                           ),
                         ),
-                        Icon(Icons.arrow_forward_ios,
-                            color: Colors.blue),
+                        IconButton(
+                            icon: Icon(Icons.arrow_forward_ios,color: Colors.blue),
+                            onPressed:(){Navigator.push(context, MaterialPageRoute(builder: (context)=>PanaduraKandy()));}
+                        )
                       ],
                     ),
                   ),
@@ -1230,8 +1252,10 @@ class _HomePageState extends State<HomePage> {
                             ],
                           ),
                         ),
-                        Icon(Icons.arrow_forward_ios,
-                            color: Colors.blue),
+                        IconButton(
+                            icon: Icon(Icons.arrow_forward_ios,color: Colors.blue),
+                            onPressed:(){Navigator.push(context, MaterialPageRoute(builder: (context)=>KandyPanadura()));}
+                        )
                       ],
                     ),
                   ),
@@ -1274,8 +1298,10 @@ class _HomePageState extends State<HomePage> {
                             ],
                           ),
                         ),
-                        Icon(Icons.arrow_forward_ios,
-                            color: Colors.blue),
+                        IconButton(
+                            icon: Icon(Icons.arrow_forward_ios,color: Colors.blue),
+                            onPressed:(){Navigator.push(context, MaterialPageRoute(builder: (context)=>ColomboGampola()));}
+                        )
                       ],
                     ),
                   ),
@@ -1318,8 +1344,10 @@ class _HomePageState extends State<HomePage> {
                             ],
                           ),
                         ),
-                        Icon(Icons.arrow_forward_ios,
-                            color: Colors.blue),
+                        IconButton(
+                            icon: Icon(Icons.arrow_forward_ios,color: Colors.blue),
+                            onPressed:(){Navigator.push(context, MaterialPageRoute(builder: (context)=>GampolaColombo()));}
+                        )
                       ],
                     ),
                   ),
@@ -1362,8 +1390,10 @@ class _HomePageState extends State<HomePage> {
                             ],
                           ),
                         ),
-                        Icon(Icons.arrow_forward_ios,
-                            color: Colors.blue),
+                        IconButton(
+                            icon: Icon(Icons.arrow_forward_ios,color: Colors.blue),
+                            onPressed:(){Navigator.push(context, MaterialPageRoute(builder: (context)=>KandyAmpara()));}
+                        )
                       ],
                     ),
                   ),
@@ -1406,8 +1436,10 @@ class _HomePageState extends State<HomePage> {
                             ],
                           ),
                         ),
-                        Icon(Icons.arrow_forward_ios,
-                            color: Colors.blue),
+                        IconButton(
+                            icon: Icon(Icons.arrow_forward_ios,color: Colors.blue),
+                            onPressed:(){Navigator.push(context, MaterialPageRoute(builder: (context)=>AmparaKandy()));}
+                        )
                       ],
                     ),
                   ),
@@ -1450,8 +1482,10 @@ class _HomePageState extends State<HomePage> {
                             ],
                           ),
                         ),
-                        Icon(Icons.arrow_forward_ios,
-                            color: Colors.blue),
+                        IconButton(
+                            icon: Icon(Icons.arrow_forward_ios,color: Colors.blue),
+                            onPressed:(){Navigator.push(context, MaterialPageRoute(builder: (context)=>ColomboKatharagama()));}
+                        )
                       ],
                     ),
                   ),
@@ -1494,8 +1528,10 @@ class _HomePageState extends State<HomePage> {
                             ],
                           ),
                         ),
-                        Icon(Icons.arrow_forward_ios,
-                            color: Colors.blue),
+                        IconButton(
+                            icon: Icon(Icons.arrow_forward_ios,color: Colors.blue),
+                            onPressed:(){Navigator.push(context, MaterialPageRoute(builder: (context)=>KatharagamaColombo()));}
+                        )
                       ],
                     ),
                   ),
@@ -1538,8 +1574,10 @@ class _HomePageState extends State<HomePage> {
                             ],
                           ),
                         ),
-                        Icon(Icons.arrow_forward_ios,
-                            color: Colors.blue),
+                        IconButton(
+                            icon: Icon(Icons.arrow_forward_ios,color: Colors.blue),
+                            onPressed:(){Navigator.push(context, MaterialPageRoute(builder: (context)=>MataraMonaragala()));}
+                        )
                       ],
                     ),
                   ),
@@ -1582,8 +1620,10 @@ class _HomePageState extends State<HomePage> {
                             ],
                           ),
                         ),
-                        Icon(Icons.arrow_forward_ios,
-                            color: Colors.blue),
+                        IconButton(
+                            icon: Icon(Icons.arrow_forward_ios,color: Colors.blue),
+                            onPressed:(){Navigator.push(context, MaterialPageRoute(builder: (context)=>MonaragalaMatara()));}
+                        )
                       ],
                     ),
                   ),
@@ -1626,8 +1666,10 @@ class _HomePageState extends State<HomePage> {
                             ],
                           ),
                         ),
-                        Icon(Icons.arrow_forward_ios,
-                            color: Colors.blue),
+                        IconButton(
+                            icon: Icon(Icons.arrow_forward_ios,color: Colors.blue),
+                            onPressed:(){Navigator.push(context, MaterialPageRoute(builder: (context)=>KandyVavuniya()));}
+                        )
                       ],
                     ),
                   ),
@@ -1670,8 +1712,10 @@ class _HomePageState extends State<HomePage> {
                             ],
                           ),
                         ),
-                        Icon(Icons.arrow_forward_ios,
-                            color: Colors.blue),
+                        IconButton(
+                            icon: Icon(Icons.arrow_forward_ios,color: Colors.blue),
+                            onPressed:(){Navigator.push(context, MaterialPageRoute(builder: (context)=>VavuniyaKandy()));}
+                        )
                       ],
                     ),
                   ),
@@ -1978,8 +2022,10 @@ class _HomePageState extends State<HomePage> {
                             ],
                           ),
                         ),
-                        Icon(Icons.arrow_forward_ios,
-                            color: Colors.blue),
+                        IconButton(
+                            icon: Icon(Icons.arrow_forward_ios,color: Colors.blue),
+                            onPressed:(){Navigator.push(context, MaterialPageRoute(builder: (context)=>ElpitiyaColombo()));}
+                        )
                       ],
                     ),
                   ),
@@ -2022,8 +2068,10 @@ class _HomePageState extends State<HomePage> {
                             ],
                           ),
                         ),
-                        Icon(Icons.arrow_forward_ios,
-                            color: Colors.blue),
+                        IconButton(
+                            icon: Icon(Icons.arrow_forward_ios,color: Colors.blue),
+                            onPressed:(){Navigator.push(context, MaterialPageRoute(builder: (context)=>ColomboElpitiya()));}
+                        )
                       ],
                     ),
                   ),
@@ -2154,8 +2202,10 @@ class _HomePageState extends State<HomePage> {
                             ],
                           ),
                         ),
-                        Icon(Icons.arrow_forward_ios,
-                            color: Colors.blue),
+                        IconButton(
+                            icon: Icon(Icons.arrow_forward_ios,color: Colors.blue),
+                            onPressed:(){Navigator.push(context, MaterialPageRoute(builder: (context)=>KandyKegalle()));}
+                        )
                       ],
                     ),
                   ),
@@ -2198,8 +2248,10 @@ class _HomePageState extends State<HomePage> {
                             ],
                           ),
                         ),
-                        Icon(Icons.arrow_forward_ios,
-                            color: Colors.blue),
+                        IconButton(
+                            icon: Icon(Icons.arrow_forward_ios,color: Colors.blue),
+                            onPressed:(){Navigator.push(context, MaterialPageRoute(builder: (context)=>KegalleKandy()));}
+                        )
                       ],
                     ),
                   ),
@@ -2242,8 +2294,10 @@ class _HomePageState extends State<HomePage> {
                             ],
                           ),
                         ),
-                        Icon(Icons.arrow_forward_ios,
-                            color: Colors.blue),
+                        IconButton(
+                            icon: Icon(Icons.arrow_forward_ios,color: Colors.blue),
+                            onPressed:(){Navigator.push(context, MaterialPageRoute(builder: (context)=>KandyMawanella()));}
+                        )
                       ],
                     ),
                   ),
@@ -2286,8 +2340,10 @@ class _HomePageState extends State<HomePage> {
                             ],
                           ),
                         ),
-                        Icon(Icons.arrow_forward_ios,
-                            color: Colors.blue),
+                        IconButton(
+                            icon: Icon(Icons.arrow_forward_ios,color: Colors.blue),
+                            onPressed:(){Navigator.push(context, MaterialPageRoute(builder: (context)=>MawanellaKandy()));}
+                        )
                       ],
                     ),
                   ),
@@ -2770,8 +2826,10 @@ class _HomePageState extends State<HomePage> {
                             ],
                           ),
                         ),
-                        Icon(Icons.arrow_forward_ios,
-                            color: Colors.blue),
+                        IconButton(
+                            icon: Icon(Icons.arrow_forward_ios,color: Colors.blue),
+                            onPressed:(){Navigator.push(context, MaterialPageRoute(builder: (context)=>PanaduraMatara()));}
+                        )
                       ],
                     ),
                   ),
@@ -2814,8 +2872,10 @@ class _HomePageState extends State<HomePage> {
                             ],
                           ),
                         ),
-                        Icon(Icons.arrow_forward_ios,
-                            color: Colors.blue),
+                        IconButton(
+                            icon: Icon(Icons.arrow_forward_ios,color: Colors.blue),
+                            onPressed:(){Navigator.push(context, MaterialPageRoute(builder: (context)=>MataraPanadura()));}
+                        )
                       ],
                     ),
                   ),
