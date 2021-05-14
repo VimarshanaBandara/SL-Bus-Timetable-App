@@ -1,44 +1,82 @@
 import 'package:bus_timetable/destinations/ambalangoda_colombo.dart';
+import 'package:bus_timetable/destinations/ampara_colombo.dart';
 import 'package:bus_timetable/destinations/ampara_kandy.dart';
 import 'package:bus_timetable/destinations/anamaduwa_colombo.dart';
+import 'package:bus_timetable/destinations/anuradhapura_colombo.dart';
+import 'package:bus_timetable/destinations/anuradhapura_kandy.dart';
+import 'package:bus_timetable/destinations/balangoda_colombo.dart';
+import 'package:bus_timetable/destinations/colomba_anuradhapuraya.dart';
 import 'package:bus_timetable/destinations/colomba_katharagama.dart';
+import 'package:bus_timetable/destinations/colomba_nawalapitiya.dart';
+import 'package:bus_timetable/destinations/colombo_akkaraipattu.dart';
 import 'package:bus_timetable/destinations/colombo_ambalangoda.dart';
+import 'package:bus_timetable/destinations/colombo_ampara.dart';
 import 'package:bus_timetable/destinations/colombo_anamaduwa.dart';
+import 'package:bus_timetable/destinations/colombo_balangoda.dart';
 import 'package:bus_timetable/destinations/colombo_elpitiya.dart';
 import 'package:bus_timetable/destinations/colombo_galle.dart';
 import 'package:bus_timetable/destinations/colombo_gampola.dart';
 import 'package:bus_timetable/destinations/colombo_halawatha.dart';
+import 'package:bus_timetable/destinations/colombo_hatton.dart';
 import 'package:bus_timetable/destinations/colombo_jaffna.dart';
+import 'package:bus_timetable/destinations/colombo_kaduruwela.dart';
+import 'package:bus_timetable/destinations/colombo_kalpitiya.dart';
 import 'package:bus_timetable/destinations/colombo_kandy.dart';
 import 'package:bus_timetable/destinations/colombo_kegalle.dart';
+import 'package:bus_timetable/destinations/colombo_kuliyapitiya.dart';
 import 'package:bus_timetable/destinations/colombo_kurunegala.dart';
+import 'package:bus_timetable/destinations/colombo_manner.dart';
+import 'package:bus_timetable/destinations/colombo_matale.dart';
 import 'package:bus_timetable/destinations/colombo_matara.dart';
 import 'package:bus_timetable/destinations/colombo_mawanella.dart';
+import 'package:bus_timetable/destinations/colombo_nuwaraeliya.dart';
+import 'package:bus_timetable/destinations/colombo_puththalama.dart';
+import 'package:bus_timetable/destinations/colombo_rathnapura.dart';
 import 'package:bus_timetable/destinations/colombo_vavuniya.dart';
+import 'package:bus_timetable/destinations/colombo_warakapola.dart';
 import 'package:bus_timetable/destinations/elpitiya_colombo.dart';
+import 'package:bus_timetable/destinations/embilipitiya_matara.dart';
 import 'package:bus_timetable/destinations/galle_colombo.dart';
 import 'package:bus_timetable/destinations/gampola_colombo.dart';
 import 'package:bus_timetable/destinations/halawatha_colombo.dart';
 import 'package:bus_timetable/destinations/jaffna_colombo.dart';
+import 'package:bus_timetable/destinations/jaffna_trincomalee.dart';
+import 'package:bus_timetable/destinations/kaduruwela_mahiyanganaya.dart';
+import 'package:bus_timetable/destinations/kalpitiya_colombo.dart';
+import 'package:bus_timetable/destinations/kalpitiya_nigambo.dart';
 import 'package:bus_timetable/destinations/kandy_ampara.dart';
+import 'package:bus_timetable/destinations/kandy_anuradhapura.dart';
 import 'package:bus_timetable/destinations/kandy_kegalle.dart';
+import 'package:bus_timetable/destinations/kandy_kurunegala.dart';
 import 'package:bus_timetable/destinations/kandy_mawanella.dart';
+import 'package:bus_timetable/destinations/kandy_negambo.dart';
 import 'package:bus_timetable/destinations/kandy_panadura.dart';
 import 'package:bus_timetable/destinations/kandy_vavuniya.dart';
 import 'package:bus_timetable/destinations/katharagama_colombo.dart';
 import 'package:bus_timetable/destinations/kegalle_colombo.dart';
 import 'package:bus_timetable/destinations/kegalle_kandy.dart';
+import 'package:bus_timetable/destinations/kuliyapitiya_colombo.dart';
 import 'package:bus_timetable/destinations/kurunegala_colombo.dart';
+import 'package:bus_timetable/destinations/kurunegala_kandy.dart';
+import 'package:bus_timetable/destinations/mahiyanganaya_kaduruwela.dart';
+import 'package:bus_timetable/destinations/mannar_colombo.dart';
 import 'package:bus_timetable/destinations/matara_colombo.dart';
+import 'package:bus_timetable/destinations/matara_embilipitiya.dart';
 import 'package:bus_timetable/destinations/matara_monaragala.dart';
 import 'package:bus_timetable/destinations/matara_panadura.dart';
 import 'package:bus_timetable/destinations/mawanella_colombo.dart';
 import 'package:bus_timetable/destinations/mawanella_kandy.dart';
 import 'package:bus_timetable/destinations/monaragala_matara.dart';
+import 'package:bus_timetable/destinations/negambo_kandy.dart';
 import 'package:bus_timetable/destinations/panadura_kandy.dart';
 import 'package:bus_timetable/destinations/panadura_matara.dart';
+import 'package:bus_timetable/destinations/puththalama_colombo.dart';
+import 'package:bus_timetable/destinations/rathnapura_matara.dart';
+import 'package:bus_timetable/destinations/trincomalee_jaffna.dart';
+import 'package:bus_timetable/destinations/trincomalee_vavuniya.dart';
 import 'package:bus_timetable/destinations/vavuniya_colombo.dart';
 import 'package:bus_timetable/destinations/vavuniya_kandy.dart';
+import 'package:bus_timetable/destinations/vavuniya_trincomalee.dart';
 import 'package:flutter/material.dart';
 class HomePage extends StatefulWidget {
   @override
@@ -934,8 +972,10 @@ class _HomePageState extends State<HomePage> {
                             ],
                           ),
                         ),
-                        Icon(Icons.arrow_forward_ios,
-                            color: Colors.blue),
+                        IconButton(
+                            icon: Icon(Icons.arrow_forward_ios,color: Colors.blue),
+                            onPressed:(){Navigator.push(context, MaterialPageRoute(builder: (context)=>ColomboAnuradhapura()));}
+                        )
                       ],
                     ),
                   ),
@@ -978,8 +1018,10 @@ class _HomePageState extends State<HomePage> {
                             ],
                           ),
                         ),
-                        Icon(Icons.arrow_forward_ios,
-                            color: Colors.blue),
+                        IconButton(
+                            icon: Icon(Icons.arrow_forward_ios,color: Colors.blue),
+                            onPressed:(){Navigator.push(context, MaterialPageRoute(builder: (context)=>AnuradhapuraColombo()));}
+                        )
                       ],
                     ),
                   ),
@@ -1846,8 +1888,10 @@ class _HomePageState extends State<HomePage> {
                             ],
                           ),
                         ),
-                        Icon(Icons.arrow_forward_ios,
-                            color: Colors.blue),
+                        IconButton(
+                            icon: Icon(Icons.arrow_forward_ios,color: Colors.blue),
+                            onPressed:(){Navigator.push(context, MaterialPageRoute(builder: (context)=>ColomboBalangoda()));}
+                        )
                       ],
                     ),
                   ),
@@ -1890,8 +1934,10 @@ class _HomePageState extends State<HomePage> {
                             ],
                           ),
                         ),
-                        Icon(Icons.arrow_forward_ios,
-                            color: Colors.blue),
+                        IconButton(
+                            icon: Icon(Icons.arrow_forward_ios,color: Colors.blue),
+                            onPressed:(){Navigator.push(context, MaterialPageRoute(builder: (context)=>BalangodaColombo()));}
+                        )
                       ],
                     ),
                   ),
@@ -1934,8 +1980,10 @@ class _HomePageState extends State<HomePage> {
                             ],
                           ),
                         ),
-                        Icon(Icons.arrow_forward_ios,
-                            color: Colors.blue),
+                        IconButton(
+                            icon: Icon(Icons.arrow_forward_ios,color: Colors.blue),
+                            onPressed:(){Navigator.push(context, MaterialPageRoute(builder: (context)=>KaduruwelaMahiyanganaya()));}
+                        )
                       ],
                     ),
                   ),
@@ -1978,8 +2026,10 @@ class _HomePageState extends State<HomePage> {
                             ],
                           ),
                         ),
-                        Icon(Icons.arrow_forward_ios,
-                            color: Colors.blue),
+                        IconButton(
+                            icon: Icon(Icons.arrow_forward_ios,color: Colors.blue),
+                            onPressed:(){Navigator.push(context, MaterialPageRoute(builder: (context)=>MahiyanganayaKaduruwela()));}
+                        )
                       ],
                     ),
                   ),
@@ -2114,8 +2164,10 @@ class _HomePageState extends State<HomePage> {
                             ],
                           ),
                         ),
-                        Icon(Icons.arrow_forward_ios,
-                            color: Colors.blue),
+                        IconButton(
+                            icon: Icon(Icons.arrow_forward_ios,color: Colors.blue),
+                            onPressed:(){Navigator.push(context, MaterialPageRoute(builder: (context)=>KandyKurunegala()));}
+                        )
                       ],
                     ),
                   ),
@@ -2158,8 +2210,10 @@ class _HomePageState extends State<HomePage> {
                             ],
                           ),
                         ),
-                        Icon(Icons.arrow_forward_ios,
-                            color: Colors.blue),
+                        IconButton(
+                            icon: Icon(Icons.arrow_forward_ios,color: Colors.blue),
+                            onPressed:(){Navigator.push(context, MaterialPageRoute(builder: (context)=>KurunegalaKandy()));}
+                        )
                       ],
                     ),
                   ),
@@ -2381,460 +2435,20 @@ class _HomePageState extends State<HomePage> {
                             crossAxisAlignment:
                             CrossAxisAlignment.start,
                             children: <Widget>[
-                              Text('Kaduwela - Matara',style: TextStyle(color: Colors.black,fontWeight: FontWeight.bold,fontSize: 17.0),),
-                              Text('කඩුවෙල - මාතර', style: TextStyle(color: Colors.grey,fontWeight: FontWeight.bold,fontSize: 17.0),)
-                            ],
-                          ),
-                        ),
-                        Icon(Icons.arrow_forward_ios,
-                            color: Colors.blue),
-                      ],
-                    ),
-                  ),
-                ),
-              ), //kaduwela-mathara,
-              SizedBox(height: 12.0,),
-              Padding(
-                padding: EdgeInsets.symmetric(
-                    vertical: 0.0, horizontal: 20.0),
-                child: ClipRRect(
-                  borderRadius: BorderRadius.circular(10),
-                  child: Container(
-                    height: 70,
-                    decoration: BoxDecoration(
-                      boxShadow:[
-                        BoxShadow(
-                          color: Colors.white, //color of shadow
-                          spreadRadius: 5, //spread radius
-                          blurRadius: 7, // blur radius
-                          offset: Offset(0, 2),
-                        ),],
-                    ),
-                    child: Row(
-                      children: <Widget>[
-                        Container(
-                          color: Colors.cyanAccent,
-                          width: 18,
-                          height: 70,
-
-                        ),
-                        SizedBox(width: 10),
-                        Expanded(
-                          child: Column(
-                            mainAxisAlignment: MainAxisAlignment.center,
-                            crossAxisAlignment:
-                            CrossAxisAlignment.start,
-                            children: <Widget>[
-                              Text('Mathara - Kaduwela',style: TextStyle(color: Colors.black,fontWeight: FontWeight.bold,fontSize: 17.0),),
-                              Text('මාතර - කඩුවෙල', style: TextStyle(color: Colors.grey,fontWeight: FontWeight.bold,fontSize: 17.0),)
-                            ],
-                          ),
-                        ),
-                        Icon(Icons.arrow_forward_ios,
-                            color: Colors.blue),
-                      ],
-                    ),
-                  ),
-                ),
-              ),//mathara-kaduwela
-              SizedBox(height: 12.0,),
-              Padding(
-                padding: EdgeInsets.symmetric(
-                    vertical: 0.0, horizontal: 20.0),
-                child: ClipRRect(
-                  borderRadius: BorderRadius.circular(10),
-                  child: Container(
-                    height: 70,
-                    decoration: BoxDecoration(
-                      boxShadow:[
-                        BoxShadow(
-                          color: Colors.white, //color of shadow
-                          spreadRadius: 5, //spread radius
-                          blurRadius: 7, // blur radius
-                          offset: Offset(0, 2),
-                        ),],
-                    ),
-                    child: Row(
-                      children: <Widget>[
-                        Container(
-                          color: Colors.cyanAccent,
-                          width: 18,
-                          height: 70,
-
-                        ),
-                        SizedBox(width: 10),
-                        Expanded(
-                          child: Column(
-                            mainAxisAlignment: MainAxisAlignment.center,
-                            crossAxisAlignment:
-                            CrossAxisAlignment.start,
-                            children: <Widget>[
-                              Text('Kaduwela - Galle',style: TextStyle(color: Colors.black,fontWeight: FontWeight.bold,fontSize: 17.0),),
-                              Text('කඩුවෙල - ගාල්ල', style: TextStyle(color: Colors.grey,fontWeight: FontWeight.bold,fontSize: 17.0),)
-                            ],
-                          ),
-                        ),
-                        Icon(Icons.arrow_forward_ios,
-                            color: Colors.blue),
-                      ],
-                    ),
-                  ),
-                ),
-              ), //kaduwela-galle
-              SizedBox(height: 12.0,),
-              Padding(
-                padding: EdgeInsets.symmetric(
-                    vertical: 0.0, horizontal: 20.0),
-                child: ClipRRect(
-                  borderRadius: BorderRadius.circular(10),
-                  child: Container(
-                    height: 70,
-                    decoration: BoxDecoration(
-                      boxShadow:[
-                        BoxShadow(
-                          color: Colors.white, //color of shadow
-                          spreadRadius: 5, //spread radius
-                          blurRadius: 7, // blur radius
-                          offset: Offset(0, 2),
-                        ),],
-                    ),
-                    child: Row(
-                      children: <Widget>[
-                        Container(
-                          color: Colors.cyanAccent,
-                          width: 18,
-                          height: 70,
-
-                        ),
-                        SizedBox(width: 10),
-                        Expanded(
-                          child: Column(
-                            mainAxisAlignment: MainAxisAlignment.center,
-                            crossAxisAlignment:
-                            CrossAxisAlignment.start,
-                            children: <Widget>[
-                              Text('Galle - Kaduwela',style: TextStyle(color: Colors.black,fontWeight: FontWeight.bold,fontSize: 17.0),),
-                              Text('ගාල්ල - කඩුවෙල', style: TextStyle(color: Colors.grey,fontWeight: FontWeight.bold,fontSize: 17.0),)
-                            ],
-                          ),
-                        ),
-                        Icon(Icons.arrow_forward_ios,
-                            color: Colors.blue),
-                      ],
-                    ),
-                  ),
-                ),
-              ),//Galle-Kaduwela
-              SizedBox(height: 12.0,),
-              Padding(
-                padding: EdgeInsets.symmetric(
-                    vertical: 0.0, horizontal: 20.0),
-                child: ClipRRect(
-                  borderRadius: BorderRadius.circular(10),
-                  child: Container(
-                    height: 70,
-                    decoration: BoxDecoration(
-                      boxShadow:[
-                        BoxShadow(
-                          color: Colors.white, //color of shadow
-                          spreadRadius: 5, //spread radius
-                          blurRadius: 7, // blur radius
-                          offset: Offset(0, 2),
-                        ),],
-                    ),
-                    child: Row(
-                      children: <Widget>[
-                        Container(
-                          color: Colors.cyanAccent,
-                          width: 18,
-                          height: 70,
-
-                        ),
-                        SizedBox(width: 10),
-                        Expanded(
-                          child: Column(
-                            mainAxisAlignment: MainAxisAlignment.center,
-                            crossAxisAlignment:
-                            CrossAxisAlignment.start,
-                            children: <Widget>[
-                              Text('Kadawatha - Matara',style: TextStyle(color: Colors.black,fontWeight: FontWeight.bold,fontSize: 17.0),),
-                              Text('කඩවත - මාතර', style: TextStyle(color: Colors.grey,fontWeight: FontWeight.bold,fontSize: 17.0),)
-                            ],
-                          ),
-                        ),
-                        Icon(Icons.arrow_forward_ios,
-                            color: Colors.blue),
-                      ],
-                    ),
-                  ),
-                ),
-              ),//Kadawatha-matara
-              SizedBox(height: 12.0,),
-              Padding(
-                padding: EdgeInsets.symmetric(
-                    vertical: 0.0, horizontal: 20.0),
-                child: ClipRRect(
-                  borderRadius: BorderRadius.circular(10),
-                  child: Container(
-                    height: 70,
-                    decoration: BoxDecoration(
-                      boxShadow:[
-                        BoxShadow(
-                          color: Colors.white, //color of shadow
-                          spreadRadius: 5, //spread radius
-                          blurRadius: 7, // blur radius
-                          offset: Offset(0, 2),
-                        ),],
-                    ),
-                    child: Row(
-                      children: <Widget>[
-                        Container(
-                          color: Colors.cyanAccent,
-                          width: 18,
-                          height: 70,
-
-                        ),
-                        SizedBox(width: 10),
-                        Expanded(
-                          child: Column(
-                            mainAxisAlignment: MainAxisAlignment.center,
-                            crossAxisAlignment:
-                            CrossAxisAlignment.start,
-                            children: <Widget>[
-                              Text('Matara - Kadawatha',style: TextStyle(color: Colors.black,fontWeight: FontWeight.bold,fontSize: 17.0),),
-                              Text('මාතර - කඩවත', style: TextStyle(color: Colors.grey,fontWeight: FontWeight.bold,fontSize: 17.0),)
-                            ],
-                          ),
-                        ),
-                        Icon(Icons.arrow_forward_ios,
-                            color: Colors.blue),
-                      ],
-                    ),
-                  ),
-                ),
-              ),//matara-kadawatha
-              SizedBox(height: 12.0,),
-              Padding(
-                padding: EdgeInsets.symmetric(
-                    vertical: 0.0, horizontal: 20.0),
-                child: ClipRRect(
-                  borderRadius: BorderRadius.circular(10),
-                  child: Container(
-                    height: 70,
-                    decoration: BoxDecoration(
-                      boxShadow:[
-                        BoxShadow(
-                          color: Colors.white, //color of shadow
-                          spreadRadius: 5, //spread radius
-                          blurRadius: 7, // blur radius
-                          offset: Offset(0, 2),
-                        ),],
-                    ),
-                    child: Row(
-                      children: <Widget>[
-                        Container(
-                          color: Colors.cyanAccent,
-                          width: 18,
-                          height: 70,
-
-                        ),
-                        SizedBox(width: 10),
-                        Expanded(
-                          child: Column(
-                            mainAxisAlignment: MainAxisAlignment.center,
-                            crossAxisAlignment:
-                            CrossAxisAlignment.start,
-                            children: <Widget>[
-                              Text('Kadawatha - Galle',style: TextStyle(color: Colors.black,fontWeight: FontWeight.bold,fontSize: 17.0),),
-                              Text('කඩවත - ගාල්ල', style: TextStyle(color: Colors.grey,fontWeight: FontWeight.bold,fontSize: 17.0),)
-                            ],
-                          ),
-                        ),
-                        Icon(Icons.arrow_forward_ios,
-                            color: Colors.blue),
-                      ],
-                    ),
-                  ),
-                ),
-              ),//kadawatha-galle
-              SizedBox(height: 12.0,),
-              Padding(
-                padding: EdgeInsets.symmetric(
-                    vertical: 0.0, horizontal: 20.0),
-                child: ClipRRect(
-                  borderRadius: BorderRadius.circular(10),
-                  child: Container(
-                    height: 70,
-                    decoration: BoxDecoration(
-                      boxShadow:[
-                        BoxShadow(
-                          color: Colors.white, //color of shadow
-                          spreadRadius: 5, //spread radius
-                          blurRadius: 7, // blur radius
-                          offset: Offset(0, 2),
-                        ),],
-                    ),
-                    child: Row(
-                      children: <Widget>[
-                        Container(
-                          color: Colors.cyanAccent,
-                          width: 18,
-                          height: 70,
-
-                        ),
-                        SizedBox(width: 10),
-                        Expanded(
-                          child: Column(
-                            mainAxisAlignment: MainAxisAlignment.center,
-                            crossAxisAlignment:
-                            CrossAxisAlignment.start,
-                            children: <Widget>[
-                              Text('Galle - Kadawatha',style: TextStyle(color: Colors.black,fontWeight: FontWeight.bold,fontSize: 17.0),),
-                              Text('ගාල්ල - කඩවත', style: TextStyle(color: Colors.grey,fontWeight: FontWeight.bold,fontSize: 17.0),)
-                            ],
-                          ),
-                        ),
-                        Icon(Icons.arrow_forward_ios,
-                            color: Colors.blue),
-                      ],
-                    ),
-                  ),
-                ),
-              ),//galle-kadawatha
-              SizedBox(height: 12.0,),
-              Padding(
-                padding: EdgeInsets.symmetric(
-                    vertical: 0.0, horizontal: 20.0),
-                child: ClipRRect(
-                  borderRadius: BorderRadius.circular(10),
-                  child: Container(
-                    height: 70,
-                    decoration: BoxDecoration(
-                      boxShadow:[
-                        BoxShadow(
-                          color: Colors.white, //color of shadow
-                          spreadRadius: 5, //spread radius
-                          blurRadius: 7, // blur radius
-                          offset: Offset(0, 2),
-                        ),],
-                    ),
-                    child: Row(
-                      children: <Widget>[
-                        Container(
-                          color: Colors.cyanAccent,
-                          width: 18,
-                          height: 70,
-
-                        ),
-                        SizedBox(width: 10),
-                        Expanded(
-                          child: Column(
-                            mainAxisAlignment: MainAxisAlignment.center,
-                            crossAxisAlignment:
-                            CrossAxisAlignment.start,
-                            children: <Widget>[
-                              Text('Colombo - Matara',style: TextStyle(color: Colors.black,fontWeight: FontWeight.bold,fontSize: 17.0),),
-                              Text('කොළඹ - මාතර', style: TextStyle(color: Colors.grey,fontWeight: FontWeight.bold,fontSize: 17.0),)
-                            ],
-                          ),
-                        ),
-                        Icon(Icons.arrow_forward_ios,
-                            color: Colors.blue),
-                      ],
-                    ),
-                  ),
-                ),
-              ),//colombo - matara
-              SizedBox(height: 12.0,),
-              Padding(
-                padding: EdgeInsets.symmetric(
-                    vertical: 0.0, horizontal: 20.0),
-                child: ClipRRect(
-                  borderRadius: BorderRadius.circular(10),
-                  child: Container(
-                    height: 70,
-                    decoration: BoxDecoration(
-                      boxShadow:[
-                        BoxShadow(
-                          color: Colors.white, //color of shadow
-                          spreadRadius: 5, //spread radius
-                          blurRadius: 7, // blur radius
-                          offset: Offset(0, 2),
-                        ),],
-                    ),
-                    child: Row(
-                      children: <Widget>[
-                        Container(
-                          color: Colors.cyanAccent,
-                          width: 18,
-                          height: 70,
-
-                        ),
-                        SizedBox(width: 10),
-                        Expanded(
-                          child: Column(
-                            mainAxisAlignment: MainAxisAlignment.center,
-                            crossAxisAlignment:
-                            CrossAxisAlignment.start,
-                            children: <Widget>[
-                              Text('Matara - Colombo',style: TextStyle(color: Colors.black,fontWeight: FontWeight.bold,fontSize: 17.0),),
-                              Text('මාතර - කොළඹ', style: TextStyle(color: Colors.grey,fontWeight: FontWeight.bold,fontSize: 17.0),)
-                            ],
-                          ),
-                        ),
-                        Icon(Icons.arrow_forward_ios,
-                            color: Colors.blue),
-                      ],
-                    ),
-                  ),
-                ),
-              ),//matara-colombo
-              SizedBox(height: 12.0,),
-              Padding(
-                padding: EdgeInsets.symmetric(
-                    vertical: 0.0, horizontal: 20.0),
-                child: ClipRRect(
-                  borderRadius: BorderRadius.circular(10),
-                  child: Container(
-                    height: 70,
-                    decoration: BoxDecoration(
-                      boxShadow:[
-                        BoxShadow(
-                          color: Colors.white, //color of shadow
-                          spreadRadius: 5, //spread radius
-                          blurRadius: 7, // blur radius
-                          offset: Offset(0, 2),
-                        ),],
-                    ),
-                    child: Row(
-                      children: <Widget>[
-                        Container(
-                          color: Colors.cyanAccent,
-                          width: 18,
-                          height: 70,
-
-                        ),
-                        SizedBox(width: 10),
-                        Expanded(
-                          child: Column(
-                            mainAxisAlignment: MainAxisAlignment.center,
-                            crossAxisAlignment:
-                            CrossAxisAlignment.start,
-                            children: <Widget>[
-                              Text('Panadura - Matara',style: TextStyle(color: Colors.black,fontWeight: FontWeight.bold,fontSize: 17.0),),
-                              Text('පානදුර - මාතර', style: TextStyle(color: Colors.grey,fontWeight: FontWeight.bold,fontSize: 17.0),)
+                              Text('Colombo - Mannar',style: TextStyle(color: Colors.black,fontWeight: FontWeight.bold,fontSize: 17.0),),
+                              Text('කොළඹ - මන්නාරම', style: TextStyle(color: Colors.grey,fontWeight: FontWeight.bold,fontSize: 17.0),)
                             ],
                           ),
                         ),
                         IconButton(
                             icon: Icon(Icons.arrow_forward_ios,color: Colors.blue),
-                            onPressed:(){Navigator.push(context, MaterialPageRoute(builder: (context)=>PanaduraMatara()));}
+                            onPressed:(){Navigator.push(context, MaterialPageRoute(builder: (context)=>ColomboMannar()));}
                         )
                       ],
                     ),
                   ),
                 ),
-              ),//panadura-matara
+              ) ,//Colombo-Mannar,
               SizedBox(height: 12.0,),
               Padding(
                 padding: EdgeInsets.symmetric(
@@ -2867,20 +2481,20 @@ class _HomePageState extends State<HomePage> {
                             crossAxisAlignment:
                             CrossAxisAlignment.start,
                             children: <Widget>[
-                              Text('Matara - Panadura',style: TextStyle(color: Colors.black,fontWeight: FontWeight.bold,fontSize: 17.0),),
-                              Text('මාතර - පානදුර', style: TextStyle(color: Colors.grey,fontWeight: FontWeight.bold,fontSize: 17.0),)
+                              Text('Mannar - Colombo',style: TextStyle(color: Colors.black,fontWeight: FontWeight.bold,fontSize: 17.0),),
+                              Text('මන්නාරම - කොළඹ', style: TextStyle(color: Colors.grey,fontWeight: FontWeight.bold,fontSize: 17.0),)
                             ],
                           ),
                         ),
                         IconButton(
                             icon: Icon(Icons.arrow_forward_ios,color: Colors.blue),
-                            onPressed:(){Navigator.push(context, MaterialPageRoute(builder: (context)=>MataraPanadura()));}
+                            onPressed:(){Navigator.push(context, MaterialPageRoute(builder: (context)=>MannarColombo()));}
                         )
                       ],
                     ),
                   ),
                 ),
-              ),//matara-panadura
+              ) ,//Mannar-Colombo,
               SizedBox(height: 12.0,),
               Padding(
                 padding: EdgeInsets.symmetric(
@@ -2913,18 +2527,20 @@ class _HomePageState extends State<HomePage> {
                             crossAxisAlignment:
                             CrossAxisAlignment.start,
                             children: <Widget>[
-                              Text('Matara - Moratuwa',style: TextStyle(color: Colors.black,fontWeight: FontWeight.bold,fontSize: 17.0),),
-                              Text('මාතර - මොරටුව', style: TextStyle(color: Colors.grey,fontWeight: FontWeight.bold,fontSize: 17.0),)
+                              Text('Colombo - Nawalapitiya',style: TextStyle(color: Colors.black,fontWeight: FontWeight.bold,fontSize: 17.0),),
+                              Text('කොළඹ - නාවලපිටිය', style: TextStyle(color: Colors.grey,fontWeight: FontWeight.bold,fontSize: 17.0),)
                             ],
                           ),
                         ),
-                        Icon(Icons.arrow_forward_ios,
-                            color: Colors.blue),
+                        IconButton(
+                            icon: Icon(Icons.arrow_forward_ios,color: Colors.blue),
+                            onPressed:(){Navigator.push(context, MaterialPageRoute(builder: (context)=>ColomboNawalapitiya()));}
+                        )
                       ],
                     ),
                   ),
                 ),
-              ),//matara-moratuwa
+              ) ,//Colombo-Nawalapitiya,
               SizedBox(height: 12.0,),
               Padding(
                 padding: EdgeInsets.symmetric(
@@ -2957,18 +2573,1223 @@ class _HomePageState extends State<HomePage> {
                             crossAxisAlignment:
                             CrossAxisAlignment.start,
                             children: <Widget>[
-                              Text('Moratuwa - Matara',style: TextStyle(color: Colors.black,fontWeight: FontWeight.bold,fontSize: 17.0),),
-                              Text('මොරටුව - මාතර', style: TextStyle(color: Colors.grey,fontWeight: FontWeight.bold,fontSize: 17.0),)
+                              Text('Colombo - Hatton',style: TextStyle(color: Colors.black,fontWeight: FontWeight.bold,fontSize: 17.0),),
+                              Text('කොළඹ - හැටන්', style: TextStyle(color: Colors.grey,fontWeight: FontWeight.bold,fontSize: 17.0),)
                             ],
                           ),
                         ),
-                        Icon(Icons.arrow_forward_ios,
-                            color: Colors.blue),
+                        IconButton(
+                            icon: Icon(Icons.arrow_forward_ios,color: Colors.blue),
+                            onPressed:(){Navigator.push(context, MaterialPageRoute(builder: (context)=>ColomboHatton()));}
+                        )
                       ],
                     ),
                   ),
                 ),
-              ),//moratuwa - matara
+              ) ,//Colombo-Hatton,
+              SizedBox(height: 12.0,),
+              Padding(
+                padding: EdgeInsets.symmetric(
+                    vertical: 0.0, horizontal: 20.0),
+                child: ClipRRect(
+                  borderRadius: BorderRadius.circular(10),
+                  child: Container(
+                    height: 70,
+                    decoration: BoxDecoration(
+                      boxShadow:[
+                        BoxShadow(
+                          color: Colors.white, //color of shadow
+                          spreadRadius: 5, //spread radius
+                          blurRadius: 7, // blur radius
+                          offset: Offset(0, 2),
+                        ),],
+                    ),
+                    child: Row(
+                      children: <Widget>[
+                        Container(
+                          color: Colors.cyanAccent,
+                          width: 18,
+                          height: 70,
+
+                        ),
+                        SizedBox(width: 10),
+                        Expanded(
+                          child: Column(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            crossAxisAlignment:
+                            CrossAxisAlignment.start,
+                            children: <Widget>[
+                              Text('Colombo - Matale',style: TextStyle(color: Colors.black,fontWeight: FontWeight.bold,fontSize: 17.0),),
+                              Text('කොළඹ - මාතලේ', style: TextStyle(color: Colors.grey,fontWeight: FontWeight.bold,fontSize: 17.0),)
+                            ],
+                          ),
+                        ),
+                        IconButton(
+                            icon: Icon(Icons.arrow_forward_ios,color: Colors.blue),
+                            onPressed:(){Navigator.push(context, MaterialPageRoute(builder: (context)=>ColomboMatale()));}
+                        )
+                      ],
+                    ),
+                  ),
+                ),
+              ) ,//Colombo-Matale,
+              SizedBox(height: 12.0,),
+              Padding(
+                padding: EdgeInsets.symmetric(
+                    vertical: 0.0, horizontal: 20.0),
+                child: ClipRRect(
+                  borderRadius: BorderRadius.circular(10),
+                  child: Container(
+                    height: 70,
+                    decoration: BoxDecoration(
+                      boxShadow:[
+                        BoxShadow(
+                          color: Colors.white, //color of shadow
+                          spreadRadius: 5, //spread radius
+                          blurRadius: 7, // blur radius
+                          offset: Offset(0, 2),
+                        ),],
+                    ),
+                    child: Row(
+                      children: <Widget>[
+                        Container(
+                          color: Colors.cyanAccent,
+                          width: 18,
+                          height: 70,
+
+                        ),
+                        SizedBox(width: 10),
+                        Expanded(
+                          child: Column(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            crossAxisAlignment:
+                            CrossAxisAlignment.start,
+                            children: <Widget>[
+                              Text('Colombo - Akkaraipattu ',style: TextStyle(color: Colors.black,fontWeight: FontWeight.bold,fontSize: 17.0),),
+                              Text('කොළඹ - අක්කරෙයිපත්තු', style: TextStyle(color: Colors.grey,fontWeight: FontWeight.bold,fontSize: 17.0),)
+                            ],
+                          ),
+                        ),
+                        IconButton(
+                            icon: Icon(Icons.arrow_forward_ios,color: Colors.blue),
+                            onPressed:(){Navigator.push(context, MaterialPageRoute(builder: (context)=>ColomboAkkaraipattu()));}
+                        )
+                      ],
+                    ),
+                  ),
+                ),
+              ) ,//Colombo-Akkaraipattu,
+              SizedBox(height: 12.0,),
+              Padding(
+                padding: EdgeInsets.symmetric(
+                    vertical: 0.0, horizontal: 20.0),
+                child: ClipRRect(
+                  borderRadius: BorderRadius.circular(10),
+                  child: Container(
+                    height: 70,
+                    decoration: BoxDecoration(
+                      boxShadow:[
+                        BoxShadow(
+                          color: Colors.white, //color of shadow
+                          spreadRadius: 5, //spread radius
+                          blurRadius: 7, // blur radius
+                          offset: Offset(0, 2),
+                        ),],
+                    ),
+                    child: Row(
+                      children: <Widget>[
+                        Container(
+                          color: Colors.cyanAccent,
+                          width: 18,
+                          height: 70,
+
+                        ),
+                        SizedBox(width: 10),
+                        Expanded(
+                          child: Column(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            crossAxisAlignment:
+                            CrossAxisAlignment.start,
+                            children: <Widget>[
+                              Text('Colombo - NuwaraEliya',style: TextStyle(color: Colors.black,fontWeight: FontWeight.bold,fontSize: 17.0),),
+                              Text('කොළඹ - නුවරඑළිය', style: TextStyle(color: Colors.grey,fontWeight: FontWeight.bold,fontSize: 17.0),)
+                            ],
+                          ),
+                        ),
+                        IconButton(
+                            icon: Icon(Icons.arrow_forward_ios,color: Colors.blue),
+                            onPressed:(){Navigator.push(context, MaterialPageRoute(builder: (context)=>ColomboNuwaraeliya()));}
+                        )
+                      ],
+                    ),
+                  ),
+                ),
+              ) ,//Colombo-Nuwaraeliya,
+              SizedBox(height: 12.0,),
+              Padding(
+                padding: EdgeInsets.symmetric(
+                    vertical: 0.0, horizontal: 20.0),
+                child: ClipRRect(
+                  borderRadius: BorderRadius.circular(10),
+                  child: Container(
+                    height: 70,
+                    decoration: BoxDecoration(
+                      boxShadow:[
+                        BoxShadow(
+                          color: Colors.white, //color of shadow
+                          spreadRadius: 5, //spread radius
+                          blurRadius: 7, // blur radius
+                          offset: Offset(0, 2),
+                        ),],
+                    ),
+                    child: Row(
+                      children: <Widget>[
+                        Container(
+                          color: Colors.cyanAccent,
+                          width: 18,
+                          height: 70,
+
+                        ),
+                        SizedBox(width: 10),
+                        Expanded(
+                          child: Column(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            crossAxisAlignment:
+                            CrossAxisAlignment.start,
+                            children: <Widget>[
+                              Text('Colombo - Warakapola',style: TextStyle(color: Colors.black,fontWeight: FontWeight.bold,fontSize: 17.0),),
+                              Text('කොළඹ - වරකාපොල', style: TextStyle(color: Colors.grey,fontWeight: FontWeight.bold,fontSize: 17.0),)
+                            ],
+                          ),
+                        ),
+                        IconButton(
+                            icon: Icon(Icons.arrow_forward_ios,color: Colors.blue),
+                            onPressed:(){Navigator.push(context, MaterialPageRoute(builder: (context)=>ColomboWarakapola()));}
+                        )
+                      ],
+                    ),
+                  ),
+                ),
+              ) ,//Colombo-Warakapola,
+              SizedBox(height: 12.0,),
+              Padding(
+                padding: EdgeInsets.symmetric(
+                    vertical: 0.0, horizontal: 20.0),
+                child: ClipRRect(
+                  borderRadius: BorderRadius.circular(10),
+                  child: Container(
+                    height: 70,
+                    decoration: BoxDecoration(
+                      boxShadow:[
+                        BoxShadow(
+                          color: Colors.white, //color of shadow
+                          spreadRadius: 5, //spread radius
+                          blurRadius: 7, // blur radius
+                          offset: Offset(0, 2),
+                        ),],
+                    ),
+                    child: Row(
+                      children: <Widget>[
+                        Container(
+                          color: Colors.cyanAccent,
+                          width: 18,
+                          height: 70,
+
+                        ),
+                        SizedBox(width: 10),
+                        Expanded(
+                          child: Column(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            crossAxisAlignment:
+                            CrossAxisAlignment.start,
+                            children: <Widget>[
+                              Text('Kalpitiya -  Negambo',style: TextStyle(color: Colors.black,fontWeight: FontWeight.bold,fontSize: 17.0),),
+                              Text('කල්පිටිය - මීගමුව', style: TextStyle(color: Colors.grey,fontWeight: FontWeight.bold,fontSize: 17.0),)
+                            ],
+                          ),
+                        ),
+                        IconButton(
+                            icon: Icon(Icons.arrow_forward_ios,color: Colors.blue),
+                            onPressed:(){Navigator.push(context, MaterialPageRoute(builder: (context)=>KalpitiyaNegambo()));}
+                        )
+                      ],
+                    ),
+                  ),
+                ),
+              ) ,//Kalpitiya-Negambo,
+              SizedBox(height: 12.0,),
+              Padding(
+                padding: EdgeInsets.symmetric(
+                    vertical: 0.0, horizontal: 20.0),
+                child: ClipRRect(
+                  borderRadius: BorderRadius.circular(10),
+                  child: Container(
+                    height: 70,
+                    decoration: BoxDecoration(
+                      boxShadow:[
+                        BoxShadow(
+                          color: Colors.white, //color of shadow
+                          spreadRadius: 5, //spread radius
+                          blurRadius: 7, // blur radius
+                          offset: Offset(0, 2),
+                        ),],
+                    ),
+                    child: Row(
+                      children: <Widget>[
+                        Container(
+                          color: Colors.cyanAccent,
+                          width: 18,
+                          height: 70,
+
+                        ),
+                        SizedBox(width: 10),
+                        Expanded(
+                          child: Column(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            crossAxisAlignment:
+                            CrossAxisAlignment.start,
+                            children: <Widget>[
+                              Text('Colombo - Rathnapura',style: TextStyle(color: Colors.black,fontWeight: FontWeight.bold,fontSize: 17.0),),
+                              Text('කොළඹ - රත්නපුර', style: TextStyle(color: Colors.grey,fontWeight: FontWeight.bold,fontSize: 17.0),)
+                            ],
+                          ),
+                        ),
+                        IconButton(
+                            icon: Icon(Icons.arrow_forward_ios,color: Colors.blue),
+                            onPressed:(){Navigator.push(context, MaterialPageRoute(builder: (context)=>ColomboRathnapura()));}
+                        )
+                      ],
+                    ),
+                  ),
+                ),
+              ) ,//Colombo-Rathnapura,
+              SizedBox(height: 12.0,),
+              Padding(
+                padding: EdgeInsets.symmetric(
+                    vertical: 0.0, horizontal: 20.0),
+                child: ClipRRect(
+                  borderRadius: BorderRadius.circular(10),
+                  child: Container(
+                    height: 70,
+                    decoration: BoxDecoration(
+                      boxShadow:[
+                        BoxShadow(
+                          color: Colors.white, //color of shadow
+                          spreadRadius: 5, //spread radius
+                          blurRadius: 7, // blur radius
+                          offset: Offset(0, 2),
+                        ),],
+                    ),
+                    child: Row(
+                      children: <Widget>[
+                        Container(
+                          color: Colors.cyanAccent,
+                          width: 18,
+                          height: 70,
+
+                        ),
+                        SizedBox(width: 10),
+                        Expanded(
+                          child: Column(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            crossAxisAlignment:
+                            CrossAxisAlignment.start,
+                            children: <Widget>[
+                              Text('Rathnapura - Matara',style: TextStyle(color: Colors.black,fontWeight: FontWeight.bold,fontSize: 17.0),),
+                              Text('රත්නපුර - මාතර', style: TextStyle(color: Colors.grey,fontWeight: FontWeight.bold,fontSize: 17.0),)
+                            ],
+                          ),
+                        ),
+                        IconButton(
+                            icon: Icon(Icons.arrow_forward_ios,color: Colors.blue),
+                            onPressed:(){Navigator.push(context, MaterialPageRoute(builder: (context)=>RathnapuraMatara()));}
+                        )
+                      ],
+                    ),
+                  ),
+                ),
+              ),// Rathnapura - Matara
+              SizedBox(height: 12.0,),
+              Padding(
+                padding: EdgeInsets.symmetric(
+                    vertical: 0.0, horizontal: 20.0),
+                child: ClipRRect(
+                  borderRadius: BorderRadius.circular(10),
+                  child: Container(
+                    height: 70,
+                    decoration: BoxDecoration(
+                      boxShadow:[
+                        BoxShadow(
+                          color: Colors.white, //color of shadow
+                          spreadRadius: 5, //spread radius
+                          blurRadius: 7, // blur radius
+                          offset: Offset(0, 2),
+                        ),],
+                    ),
+                    child: Row(
+                      children: <Widget>[
+                        Container(
+                          color: Colors.cyanAccent,
+                          width: 18,
+                          height: 70,
+
+                        ),
+                        SizedBox(width: 10),
+                        Expanded(
+                          child: Column(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            crossAxisAlignment:
+                            CrossAxisAlignment.start,
+                            children: <Widget>[
+                              Text('Kandy - Negambo',style: TextStyle(color: Colors.black,fontWeight: FontWeight.bold,fontSize: 17.0),),
+                              Text('මහනුවර - මීගමුව', style: TextStyle(color: Colors.grey,fontWeight: FontWeight.bold,fontSize: 17.0),)
+                            ],
+                          ),
+                        ),
+                        IconButton(
+                            icon: Icon(Icons.arrow_forward_ios,color: Colors.blue),
+                            onPressed:(){Navigator.push(context, MaterialPageRoute(builder: (context)=>KandyNegambo()));}
+                        )
+                      ],
+                    ),
+                  ),
+                ),
+              ),// Kandy - Negambo
+              SizedBox(height: 12.0,),
+              Padding(
+                padding: EdgeInsets.symmetric(
+                    vertical: 0.0, horizontal: 20.0),
+                child: ClipRRect(
+                  borderRadius: BorderRadius.circular(10),
+                  child: Container(
+                    height: 70,
+                    decoration: BoxDecoration(
+                      boxShadow:[
+                        BoxShadow(
+                          color: Colors.white, //color of shadow
+                          spreadRadius: 5, //spread radius
+                          blurRadius: 7, // blur radius
+                          offset: Offset(0, 2),
+                        ),],
+                    ),
+                    child: Row(
+                      children: <Widget>[
+                        Container(
+                          color: Colors.cyanAccent,
+                          width: 18,
+                          height: 70,
+
+                        ),
+                        SizedBox(width: 10),
+                        Expanded(
+                          child: Column(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            crossAxisAlignment:
+                            CrossAxisAlignment.start,
+                            children: <Widget>[
+                              Text('Negambo - Kandy',style: TextStyle(color: Colors.black,fontWeight: FontWeight.bold,fontSize: 17.0),),
+                              Text('මීගමුව - මහනුවර', style: TextStyle(color: Colors.grey,fontWeight: FontWeight.bold,fontSize: 17.0),)
+                            ],
+                          ),
+                        ),
+                        IconButton(
+                            icon: Icon(Icons.arrow_forward_ios,color: Colors.blue),
+                            onPressed:(){Navigator.push(context, MaterialPageRoute(builder: (context)=>NegamboKandy()));}
+                        )
+                      ],
+                    ),
+                  ),
+                ),
+              ),// Negambo-Kandy
+              SizedBox(height: 12.0,),
+              Padding(
+                padding: EdgeInsets.symmetric(
+                    vertical: 0.0, horizontal: 20.0),
+                child: ClipRRect(
+                  borderRadius: BorderRadius.circular(10),
+                  child: Container(
+                    height: 70,
+                    decoration: BoxDecoration(
+                      boxShadow:[
+                        BoxShadow(
+                          color: Colors.white, //color of shadow
+                          spreadRadius: 5, //spread radius
+                          blurRadius: 7, // blur radius
+                          offset: Offset(0, 2),
+                        ),],
+                    ),
+                    child: Row(
+                      children: <Widget>[
+                        Container(
+                          color: Colors.cyanAccent,
+                          width: 18,
+                          height: 70,
+
+                        ),
+                        SizedBox(width: 10),
+                        Expanded(
+                          child: Column(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            crossAxisAlignment:
+                            CrossAxisAlignment.start,
+                            children: <Widget>[
+                              Text('Matara - Embilipitiya',style: TextStyle(color: Colors.black,fontWeight: FontWeight.bold,fontSize: 17.0),),
+                              Text('මාතර - ඇඹිලිපිටිය', style: TextStyle(color: Colors.grey,fontWeight: FontWeight.bold,fontSize: 17.0),)
+                            ],
+                          ),
+                        ),
+                        IconButton(
+                            icon: Icon(Icons.arrow_forward_ios,color: Colors.blue),
+                            onPressed:(){Navigator.push(context, MaterialPageRoute(builder: (context)=>MataraEmbilipitiya()));}
+                        )
+                      ],
+                    ),
+                  ),
+                ),
+              ),// Matara-Embilipitiya
+              SizedBox(height: 12.0,),
+              Padding(
+                padding: EdgeInsets.symmetric(
+                    vertical: 0.0, horizontal: 20.0),
+                child: ClipRRect(
+                  borderRadius: BorderRadius.circular(10),
+                  child: Container(
+                    height: 70,
+                    decoration: BoxDecoration(
+                      boxShadow:[
+                        BoxShadow(
+                          color: Colors.white, //color of shadow
+                          spreadRadius: 5, //spread radius
+                          blurRadius: 7, // blur radius
+                          offset: Offset(0, 2),
+                        ),],
+                    ),
+                    child: Row(
+                      children: <Widget>[
+                        Container(
+                          color: Colors.cyanAccent,
+                          width: 18,
+                          height: 70,
+
+                        ),
+                        SizedBox(width: 10),
+                        Expanded(
+                          child: Column(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            crossAxisAlignment:
+                            CrossAxisAlignment.start,
+                            children: <Widget>[
+                              Text('Embilipitiya - Matara',style: TextStyle(color: Colors.black,fontWeight: FontWeight.bold,fontSize: 17.0),),
+                              Text('ඇඹිලිපිටිය - මාතර', style: TextStyle(color: Colors.grey,fontWeight: FontWeight.bold,fontSize: 17.0),)
+                            ],
+                          ),
+                        ),
+                        IconButton(
+                            icon: Icon(Icons.arrow_forward_ios,color: Colors.blue),
+                            onPressed:(){Navigator.push(context, MaterialPageRoute(builder: (context)=>EmbilipitiyaMatara()));}
+                        )
+                      ],
+                    ),
+                  ),
+                ),
+              ),//Embilipitiya- Matara
+              SizedBox(height: 12.0,),
+              Padding(
+                padding: EdgeInsets.symmetric(
+                    vertical: 0.0, horizontal: 20.0),
+                child: ClipRRect(
+                  borderRadius: BorderRadius.circular(10),
+                  child: Container(
+                    height: 70,
+                    decoration: BoxDecoration(
+                      boxShadow:[
+                        BoxShadow(
+                          color: Colors.white, //color of shadow
+                          spreadRadius: 5, //spread radius
+                          blurRadius: 7, // blur radius
+                          offset: Offset(0, 2),
+                        ),],
+                    ),
+                    child: Row(
+                      children: <Widget>[
+                        Container(
+                          color: Colors.cyanAccent,
+                          width: 18,
+                          height: 70,
+
+                        ),
+                        SizedBox(width: 10),
+                        Expanded(
+                          child: Column(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            crossAxisAlignment:
+                            CrossAxisAlignment.start,
+                            children: <Widget>[
+                              Text('Colombo - Kaduruwela',style: TextStyle(color: Colors.black,fontWeight: FontWeight.bold,fontSize: 17.0),),
+                              Text('කොළඹ - කදුරුවෙල', style: TextStyle(color: Colors.grey,fontWeight: FontWeight.bold,fontSize: 17.0),)
+                            ],
+                          ),
+                        ),
+                        IconButton(
+                            icon: Icon(Icons.arrow_forward_ios,color: Colors.blue),
+                            onPressed:(){Navigator.push(context, MaterialPageRoute(builder: (context)=>ColomboKaduruwela()));}
+                        )
+                      ],
+                    ),
+                  ),
+                ),
+              ),//Colombo - Kaduruwela
+              SizedBox(height: 12.0,),
+              Padding(
+                padding: EdgeInsets.symmetric(
+                    vertical: 0.0, horizontal: 20.0),
+                child: ClipRRect(
+                  borderRadius: BorderRadius.circular(10),
+                  child: Container(
+                    height: 70,
+                    decoration: BoxDecoration(
+                      boxShadow:[
+                        BoxShadow(
+                          color: Colors.white, //color of shadow
+                          spreadRadius: 5, //spread radius
+                          blurRadius: 7, // blur radius
+                          offset: Offset(0, 2),
+                        ),],
+                    ),
+                    child: Row(
+                      children: <Widget>[
+                        Container(
+                          color: Colors.cyanAccent,
+                          width: 18,
+                          height: 70,
+
+                        ),
+                        SizedBox(width: 10),
+                        Expanded(
+                          child: Column(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            crossAxisAlignment:
+                            CrossAxisAlignment.start,
+                            children: <Widget>[
+                              Text('Colombo - Puttalam',style: TextStyle(color: Colors.black,fontWeight: FontWeight.bold,fontSize: 17.0),),
+                              Text('කොළඹ - පුත්තලම', style: TextStyle(color: Colors.grey,fontWeight: FontWeight.bold,fontSize: 17.0),)
+                            ],
+                          ),
+                        ),
+                        IconButton(
+                            icon: Icon(Icons.arrow_forward_ios,color: Colors.blue),
+                            onPressed:(){Navigator.push(context, MaterialPageRoute(builder: (context)=>ColomboPuttalam()));}
+                        )
+                      ],
+                    ),
+                  ),
+                ),
+              ),//Colombo - Puththalama
+              SizedBox(height: 12.0,),
+              Padding(
+                padding: EdgeInsets.symmetric(
+                    vertical: 0.0, horizontal: 20.0),
+                child: ClipRRect(
+                  borderRadius: BorderRadius.circular(10),
+                  child: Container(
+                    height: 70,
+                    decoration: BoxDecoration(
+                      boxShadow:[
+                        BoxShadow(
+                          color: Colors.white, //color of shadow
+                          spreadRadius: 5, //spread radius
+                          blurRadius: 7, // blur radius
+                          offset: Offset(0, 2),
+                        ),],
+                    ),
+                    child: Row(
+                      children: <Widget>[
+                        Container(
+                          color: Colors.cyanAccent,
+                          width: 18,
+                          height: 70,
+
+                        ),
+                        SizedBox(width: 10),
+                        Expanded(
+                          child: Column(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            crossAxisAlignment:
+                            CrossAxisAlignment.start,
+                            children: <Widget>[
+                              Text('Puttalam - Colombo',style: TextStyle(color: Colors.black,fontWeight: FontWeight.bold,fontSize: 17.0),),
+                              Text('පුත්තලම - කොළඹ', style: TextStyle(color: Colors.grey,fontWeight: FontWeight.bold,fontSize: 17.0),)
+                            ],
+                          ),
+                        ),
+                        IconButton(
+                            icon: Icon(Icons.arrow_forward_ios,color: Colors.blue),
+                            onPressed:(){Navigator.push(context, MaterialPageRoute(builder: (context)=>PuttalamColombo()));}
+                        )
+                      ],
+                    ),
+                  ),
+                ),
+              ),// Puththalama- Colombo
+              SizedBox(height: 12.0,),
+              Padding(
+                padding: EdgeInsets.symmetric(
+                    vertical: 0.0, horizontal: 20.0),
+                child: ClipRRect(
+                  borderRadius: BorderRadius.circular(10),
+                  child: Container(
+                    height: 70,
+                    decoration: BoxDecoration(
+                      boxShadow:[
+                        BoxShadow(
+                          color: Colors.white, //color of shadow
+                          spreadRadius: 5, //spread radius
+                          blurRadius: 7, // blur radius
+                          offset: Offset(0, 2),
+                        ),],
+                    ),
+                    child: Row(
+                      children: <Widget>[
+                        Container(
+                          color: Colors.cyanAccent,
+                          width: 18,
+                          height: 70,
+
+                        ),
+                        SizedBox(width: 10),
+                        Expanded(
+                          child: Column(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            crossAxisAlignment:
+                            CrossAxisAlignment.start,
+                            children: <Widget>[
+                              Text('Anuradhapura - Kandy',style: TextStyle(color: Colors.black,fontWeight: FontWeight.bold,fontSize: 17.0),),
+                              Text('අනුරාධපුරය - මහනුවර', style: TextStyle(color: Colors.grey,fontWeight: FontWeight.bold,fontSize: 17.0),)
+                            ],
+                          ),
+                        ),
+                        IconButton(
+                            icon: Icon(Icons.arrow_forward_ios,color: Colors.blue),
+                            onPressed:(){Navigator.push(context, MaterialPageRoute(builder: (context)=>AnuradhapuraKandy()));}
+                        )
+                      ],
+                    ),
+                  ),
+                ),
+              ),// Anuradhapura - Kandy
+              SizedBox(height: 12.0,),
+              Padding(
+                padding: EdgeInsets.symmetric(
+                    vertical: 0.0, horizontal: 20.0),
+                child: ClipRRect(
+                  borderRadius: BorderRadius.circular(10),
+                  child: Container(
+                    height: 70,
+                    decoration: BoxDecoration(
+                      boxShadow:[
+                        BoxShadow(
+                          color: Colors.white, //color of shadow
+                          spreadRadius: 5, //spread radius
+                          blurRadius: 7, // blur radius
+                          offset: Offset(0, 2),
+                        ),],
+                    ),
+                    child: Row(
+                      children: <Widget>[
+                        Container(
+                          color: Colors.cyanAccent,
+                          width: 18,
+                          height: 70,
+
+                        ),
+                        SizedBox(width: 10),
+                        Expanded(
+                          child: Column(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            crossAxisAlignment:
+                            CrossAxisAlignment.start,
+                            children: <Widget>[
+                              Text('Kandy - Anuradhapura',style: TextStyle(color: Colors.black,fontWeight: FontWeight.bold,fontSize: 17.0),),
+                              Text('මහනුවර - අනුරාධපුරය', style: TextStyle(color: Colors.grey,fontWeight: FontWeight.bold,fontSize: 17.0),)
+                            ],
+                          ),
+                        ),
+                        IconButton(
+                            icon: Icon(Icons.arrow_forward_ios,color: Colors.blue),
+                            onPressed:(){Navigator.push(context, MaterialPageRoute(builder: (context)=>KandyAnuradhapura()));}
+                        )
+                      ],
+                    ),
+                  ),
+                ),
+              ),// Kandy - Anuradhapura
+              SizedBox(height: 12.0,),
+              Padding(
+                padding: EdgeInsets.symmetric(
+                    vertical: 0.0, horizontal: 20.0),
+                child: ClipRRect(
+                  borderRadius: BorderRadius.circular(10),
+                  child: Container(
+                    height: 70,
+                    decoration: BoxDecoration(
+                      boxShadow:[
+                        BoxShadow(
+                          color: Colors.white, //color of shadow
+                          spreadRadius: 5, //spread radius
+                          blurRadius: 7, // blur radius
+                          offset: Offset(0, 2),
+                        ),],
+                    ),
+                    child: Row(
+                      children: <Widget>[
+                        Container(
+                          color: Colors.cyanAccent,
+                          width: 18,
+                          height: 70,
+
+                        ),
+                        SizedBox(width: 10),
+                        Expanded(
+                          child: Column(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            crossAxisAlignment:
+                            CrossAxisAlignment.start,
+                            children: <Widget>[
+                              Text('Colombo - Ampara',style: TextStyle(color: Colors.black,fontWeight: FontWeight.bold,fontSize: 17.0),),
+                              Text('කොළඹ - අම්පාර', style: TextStyle(color: Colors.grey,fontWeight: FontWeight.bold,fontSize: 17.0),)
+                            ],
+                          ),
+                        ),
+                        IconButton(
+                            icon: Icon(Icons.arrow_forward_ios,color: Colors.blue),
+                            onPressed:(){Navigator.push(context, MaterialPageRoute(builder: (context)=>ColomboAmpara()));}
+                        )
+                      ],
+                    ),
+                  ),
+                ),
+              ),// Colombo-Ampara
+              SizedBox(height: 12.0,),
+              Padding(
+                padding: EdgeInsets.symmetric(
+                    vertical: 0.0, horizontal: 20.0),
+                child: ClipRRect(
+                  borderRadius: BorderRadius.circular(10),
+                  child: Container(
+                    height: 70,
+                    decoration: BoxDecoration(
+                      boxShadow:[
+                        BoxShadow(
+                          color: Colors.white, //color of shadow
+                          spreadRadius: 5, //spread radius
+                          blurRadius: 7, // blur radius
+                          offset: Offset(0, 2),
+                        ),],
+                    ),
+                    child: Row(
+                      children: <Widget>[
+                        Container(
+                          color: Colors.cyanAccent,
+                          width: 18,
+                          height: 70,
+
+                        ),
+                        SizedBox(width: 10),
+                        Expanded(
+                          child: Column(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            crossAxisAlignment:
+                            CrossAxisAlignment.start,
+                            children: <Widget>[
+                              Text('Ampara - Colombo',style: TextStyle(color: Colors.black,fontWeight: FontWeight.bold,fontSize: 17.0),),
+                              Text('අම්පාර - කොළඹ', style: TextStyle(color: Colors.grey,fontWeight: FontWeight.bold,fontSize: 17.0),)
+                            ],
+                          ),
+                        ),
+                        IconButton(
+                            icon: Icon(Icons.arrow_forward_ios,color: Colors.blue),
+                            onPressed:(){Navigator.push(context, MaterialPageRoute(builder: (context)=>AmparaColombo()));}
+                        )
+                      ],
+                    ),
+                  ),
+                ),
+              ),// Ampara - Colombo
+              SizedBox(height: 12.0,),
+              Padding(
+                padding: EdgeInsets.symmetric(
+                    vertical: 0.0, horizontal: 20.0),
+                child: ClipRRect(
+                  borderRadius: BorderRadius.circular(10),
+                  child: Container(
+                    height: 70,
+                    decoration: BoxDecoration(
+                      boxShadow:[
+                        BoxShadow(
+                          color: Colors.white, //color of shadow
+                          spreadRadius: 5, //spread radius
+                          blurRadius: 7, // blur radius
+                          offset: Offset(0, 2),
+                        ),],
+                    ),
+                    child: Row(
+                      children: <Widget>[
+                        Container(
+                          color: Colors.cyanAccent,
+                          width: 18,
+                          height: 70,
+
+                        ),
+                        SizedBox(width: 10),
+                        Expanded(
+                          child: Column(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            crossAxisAlignment:
+                            CrossAxisAlignment.start,
+                            children: <Widget>[
+                              Text('Vavuniya - Trincomalee',style: TextStyle(color: Colors.black,fontWeight: FontWeight.bold,fontSize: 17.0),),
+                              Text('වවුනියාව -ත්‍රිකුණාමලය', style: TextStyle(color: Colors.grey,fontWeight: FontWeight.bold,fontSize: 17.0),)
+                            ],
+                          ),
+                        ),
+                        IconButton(
+                            icon: Icon(Icons.arrow_forward_ios,color: Colors.blue),
+                            onPressed:(){Navigator.push(context, MaterialPageRoute(builder: (context)=>VavuniyaTrincomalee()));}
+                        )
+                      ],
+                    ),
+                  ),
+                ),
+              ),// Vavuniya - Trincomalee
+              SizedBox(height: 12.0,),
+              Padding(
+                padding: EdgeInsets.symmetric(
+                    vertical: 0.0, horizontal: 20.0),
+                child: ClipRRect(
+                  borderRadius: BorderRadius.circular(10),
+                  child: Container(
+                    height: 70,
+                    decoration: BoxDecoration(
+                      boxShadow:[
+                        BoxShadow(
+                          color: Colors.white, //color of shadow
+                          spreadRadius: 5, //spread radius
+                          blurRadius: 7, // blur radius
+                          offset: Offset(0, 2),
+                        ),],
+                    ),
+                    child: Row(
+                      children: <Widget>[
+                        Container(
+                          color: Colors.cyanAccent,
+                          width: 18,
+                          height: 70,
+
+                        ),
+                        SizedBox(width: 10),
+                        Expanded(
+                          child: Column(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            crossAxisAlignment:
+                            CrossAxisAlignment.start,
+                            children: <Widget>[
+                              Text('Trincomalee - Vavuniya',style: TextStyle(color: Colors.black,fontWeight: FontWeight.bold,fontSize: 17.0),),
+                              Text('ත්‍රිකුණාමලය - වවුනියාව', style: TextStyle(color: Colors.grey,fontWeight: FontWeight.bold,fontSize: 17.0),)
+                            ],
+                          ),
+                        ),
+                        IconButton(
+                            icon: Icon(Icons.arrow_forward_ios,color: Colors.blue),
+                            onPressed:(){Navigator.push(context, MaterialPageRoute(builder: (context)=>TrincomaleeVavuniya()));}
+                        )
+                      ],
+                    ),
+                  ),
+                ),
+              ),// Trincomalee - Vavuniya
+              SizedBox(height: 12.0,),
+              Padding(
+                padding: EdgeInsets.symmetric(
+                    vertical: 0.0, horizontal: 20.0),
+                child: ClipRRect(
+                  borderRadius: BorderRadius.circular(10),
+                  child: Container(
+                    height: 70,
+                    decoration: BoxDecoration(
+                      boxShadow:[
+                        BoxShadow(
+                          color: Colors.white, //color of shadow
+                          spreadRadius: 5, //spread radius
+                          blurRadius: 7, // blur radius
+                          offset: Offset(0, 2),
+                        ),],
+                    ),
+                    child: Row(
+                      children: <Widget>[
+                        Container(
+                          color: Colors.cyanAccent,
+                          width: 18,
+                          height: 70,
+
+                        ),
+                        SizedBox(width: 10),
+                        Expanded(
+                          child: Column(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            crossAxisAlignment:
+                            CrossAxisAlignment.start,
+                            children: <Widget>[
+                              Text('Trincomalee - Jaffna',style: TextStyle(color: Colors.black,fontWeight: FontWeight.bold,fontSize: 17.0),),
+                              Text('ත්‍රිකුණාමලය - යාපනය', style: TextStyle(color: Colors.grey,fontWeight: FontWeight.bold,fontSize: 17.0),)
+                            ],
+                          ),
+                        ),
+                        IconButton(
+                            icon: Icon(Icons.arrow_forward_ios,color: Colors.blue),
+                            onPressed:(){Navigator.push(context, MaterialPageRoute(builder: (context)=>TrincomaleeJaffna()));}
+                        )
+                      ],
+                    ),
+                  ),
+                ),
+              ),// Trincomalee - Jaffna
+              SizedBox(height: 12.0,),
+              Padding(
+                padding: EdgeInsets.symmetric(
+                    vertical: 0.0, horizontal: 20.0),
+                child: ClipRRect(
+                  borderRadius: BorderRadius.circular(10),
+                  child: Container(
+                    height: 70,
+                    decoration: BoxDecoration(
+                      boxShadow:[
+                        BoxShadow(
+                          color: Colors.white, //color of shadow
+                          spreadRadius: 5, //spread radius
+                          blurRadius: 7, // blur radius
+                          offset: Offset(0, 2),
+                        ),],
+                    ),
+                    child: Row(
+                      children: <Widget>[
+                        Container(
+                          color: Colors.cyanAccent,
+                          width: 18,
+                          height: 70,
+
+                        ),
+                        SizedBox(width: 10),
+                        Expanded(
+                          child: Column(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            crossAxisAlignment:
+                            CrossAxisAlignment.start,
+                            children: <Widget>[
+                              Text('Jaffna - Trincomalee',style: TextStyle(color: Colors.black,fontWeight: FontWeight.bold,fontSize: 17.0),),
+                              Text('යාපනය - ත්‍රිකුණාමලය', style: TextStyle(color: Colors.grey,fontWeight: FontWeight.bold,fontSize: 17.0),)
+                            ],
+                          ),
+                        ),
+                        IconButton(
+                            icon: Icon(Icons.arrow_forward_ios,color: Colors.blue),
+                            onPressed:(){Navigator.push(context, MaterialPageRoute(builder: (context)=>JaffnaTrincomalee()));}
+                        )
+                      ],
+                    ),
+                  ),
+                ),
+              ),// Jaffna - Trincomalee
+              SizedBox(height: 12.0,),
+              Padding(
+                padding: EdgeInsets.symmetric(
+                    vertical: 0.0, horizontal: 20.0),
+                child: ClipRRect(
+                  borderRadius: BorderRadius.circular(10),
+                  child: Container(
+                    height: 70,
+                    decoration: BoxDecoration(
+                      boxShadow:[
+                        BoxShadow(
+                          color: Colors.white, //color of shadow
+                          spreadRadius: 5, //spread radius
+                          blurRadius: 7, // blur radius
+                          offset: Offset(0, 2),
+                        ),],
+                    ),
+                    child: Row(
+                      children: <Widget>[
+                        Container(
+                          color: Colors.cyanAccent,
+                          width: 18,
+                          height: 70,
+
+                        ),
+                        SizedBox(width: 10),
+                        Expanded(
+                          child: Column(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            crossAxisAlignment:
+                            CrossAxisAlignment.start,
+                            children: <Widget>[
+                              Text('Colombo - Kuliyapitiya',style: TextStyle(color: Colors.black,fontWeight: FontWeight.bold,fontSize: 17.0),),
+                              Text('කොළඹ - කුලියාපිටිය ', style: TextStyle(color: Colors.grey,fontWeight: FontWeight.bold,fontSize: 17.0),)
+                            ],
+                          ),
+                        ),
+                        IconButton(
+                            icon: Icon(Icons.arrow_forward_ios,color: Colors.blue),
+                            onPressed:(){Navigator.push(context, MaterialPageRoute(builder: (context)=>ColomboKuliyapitiya()));}
+                        )
+                      ],
+                    ),
+                  ),
+                ),
+              ),// Colombo-Kuliyapitiya
+              SizedBox(height: 12.0,),
+              Padding(
+                padding: EdgeInsets.symmetric(
+                    vertical: 0.0, horizontal: 20.0),
+                child: ClipRRect(
+                  borderRadius: BorderRadius.circular(10),
+                  child: Container(
+                    height: 70,
+                    decoration: BoxDecoration(
+                      boxShadow:[
+                        BoxShadow(
+                          color: Colors.white, //color of shadow
+                          spreadRadius: 5, //spread radius
+                          blurRadius: 7, // blur radius
+                          offset: Offset(0, 2),
+                        ),],
+                    ),
+                    child: Row(
+                      children: <Widget>[
+                        Container(
+                          color: Colors.cyanAccent,
+                          width: 18,
+                          height: 70,
+
+                        ),
+                        SizedBox(width: 10),
+                        Expanded(
+                          child: Column(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            crossAxisAlignment:
+                            CrossAxisAlignment.start,
+                            children: <Widget>[
+                              Text('Kuliyapitiya - Colombo',style: TextStyle(color: Colors.black,fontWeight: FontWeight.bold,fontSize: 17.0),),
+                              Text('කුලියාපිටිය - කොළඹ', style: TextStyle(color: Colors.grey,fontWeight: FontWeight.bold,fontSize: 17.0),)
+                            ],
+                          ),
+                        ),
+                        IconButton(
+                            icon: Icon(Icons.arrow_forward_ios,color: Colors.blue),
+                            onPressed:(){Navigator.push(context, MaterialPageRoute(builder: (context)=>KuliyapitiyaColombo()));}
+                        )
+                      ],
+                    ),
+                  ),
+                ),
+              ),// Kuliyapitiya-Colombo
+              SizedBox(height: 12.0,),
+              Padding(
+                padding: EdgeInsets.symmetric(
+                    vertical: 0.0, horizontal: 20.0),
+                child: ClipRRect(
+                  borderRadius: BorderRadius.circular(10),
+                  child: Container(
+                    height: 70,
+                    decoration: BoxDecoration(
+                      boxShadow:[
+                        BoxShadow(
+                          color: Colors.white, //color of shadow
+                          spreadRadius: 5, //spread radius
+                          blurRadius: 7, // blur radius
+                          offset: Offset(0, 2),
+                        ),],
+                    ),
+                    child: Row(
+                      children: <Widget>[
+                        Container(
+                          color: Colors.cyanAccent,
+                          width: 18,
+                          height: 70,
+
+                        ),
+                        SizedBox(width: 10),
+                        Expanded(
+                          child: Column(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            crossAxisAlignment:
+                            CrossAxisAlignment.start,
+                            children: <Widget>[
+                              Text('Colombo - Kalpitiya',style: TextStyle(color: Colors.black,fontWeight: FontWeight.bold,fontSize: 17.0),),
+                              Text('කොළඹ - කල්පිටිය', style: TextStyle(color: Colors.grey,fontWeight: FontWeight.bold,fontSize: 17.0),)
+                            ],
+                          ),
+                        ),
+                        IconButton(
+                            icon: Icon(Icons.arrow_forward_ios,color: Colors.blue),
+                            onPressed:(){Navigator.push(context, MaterialPageRoute(builder: (context)=>ColomboKalpitiya()));}
+                        )
+                      ],
+                    ),
+                  ),
+                ),
+              ),// Colombo-Kalpitiya
+              SizedBox(height: 12.0,),
+              Padding(
+                padding: EdgeInsets.symmetric(
+                    vertical: 0.0, horizontal: 20.0),
+                child: ClipRRect(
+                  borderRadius: BorderRadius.circular(10),
+                  child: Container(
+                    height: 70,
+                    decoration: BoxDecoration(
+                      boxShadow:[
+                        BoxShadow(
+                          color: Colors.white, //color of shadow
+                          spreadRadius: 5, //spread radius
+                          blurRadius: 7, // blur radius
+                          offset: Offset(0, 2),
+                        ),],
+                    ),
+                    child: Row(
+                      children: <Widget>[
+                        Container(
+                          color: Colors.cyanAccent,
+                          width: 18,
+                          height: 70,
+
+                        ),
+                        SizedBox(width: 10),
+                        Expanded(
+                          child: Column(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            crossAxisAlignment:
+                            CrossAxisAlignment.start,
+                            children: <Widget>[
+                              Text('Kalpitiya - Colombo',style: TextStyle(color: Colors.black,fontWeight: FontWeight.bold,fontSize: 17.0),),
+                              Text('කල්පිටිය - කොළඹ', style: TextStyle(color: Colors.grey,fontWeight: FontWeight.bold,fontSize: 17.0),)
+                            ],
+                          ),
+                        ),
+                        IconButton(
+                            icon: Icon(Icons.arrow_forward_ios,color: Colors.blue),
+                            onPressed:(){Navigator.push(context, MaterialPageRoute(builder: (context)=>KalpitiyaColombo()));}
+                        )
+                      ],
+                    ),
+                  ),
+                ),
+              ),// Kalpitiya - Colombo
+              SizedBox(height: 12.0,),
+
+
+
+
+
+
 
 
 
