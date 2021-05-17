@@ -1,11 +1,11 @@
 import 'package:bus_timetable/homeScreen.dart';
 import 'package:flutter/material.dart';
-class ColomboNawalapitiya extends StatefulWidget {
+class DeiyandaraColombo extends StatefulWidget {
   @override
-  _ColomboNawalapitiyaState createState() => _ColomboNawalapitiyaState();
+  _DeiyandaraColomboState createState() => _DeiyandaraColomboState();
 }
 
-class _ColomboNawalapitiyaState extends State<ColomboNawalapitiya> {
+class _DeiyandaraColomboState extends State<DeiyandaraColombo> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -36,17 +36,17 @@ class _ColomboNawalapitiyaState extends State<ColomboNawalapitiya> {
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
 
-                        Text('Colombo',style: TextStyle(color: Colors.white,fontSize: 27.0,fontWeight: FontWeight.bold),),
+                        Text('Deiyandara',style: TextStyle(color: Colors.white,fontSize: 27.0,fontWeight: FontWeight.bold),),
                         Icon(Icons.arrow_right_alt_outlined,size: 45.0,color: Colors.white,),
-                        Text('Nawalapitiya',style: TextStyle(color: Colors.white,fontSize: 27.0,fontWeight: FontWeight.bold),)
+                        Text('Colombo',style: TextStyle(color: Colors.white,fontSize: 27.0,fontWeight: FontWeight.bold),)
                       ],
                     ),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
-                        Text('කොළඹ',style: TextStyle(color: Colors.white,fontSize: 17.0,fontWeight: FontWeight.bold),),
+                        Text('දෙයියන්දර',style: TextStyle(color: Colors.white,fontSize: 17.0,fontWeight: FontWeight.bold),),
                         Icon(Icons.arrow_right_alt_outlined,size: 20.0,color: Colors.white,),
-                        Text('නාවලපිටිය',style: TextStyle(color: Colors.white,fontSize: 17.0,fontWeight: FontWeight.bold),)
+                        Text('කොළඹ',style: TextStyle(color: Colors.white,fontSize: 17.0,fontWeight: FontWeight.bold),)
                       ],
                     ),
                     SizedBox(height: 10.0,),
@@ -56,8 +56,8 @@ class _ColomboNawalapitiyaState extends State<ColomboNawalapitiya> {
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.spaceAround,
                         children: [
-                          Text('133 KM',style: TextStyle(color: Colors.white,fontWeight: FontWeight.bold,fontSize: 23.0),),
-                          Text('03.30 Hours',style: TextStyle(color: Colors.white,fontWeight: FontWeight.bold,fontSize: 23.0),)
+                          Text('188.2 KM',style: TextStyle(color: Colors.white,fontWeight: FontWeight.bold,fontSize: 23.0),),
+                          Text('03.00 Hours',style: TextStyle(color: Colors.white,fontWeight: FontWeight.bold,fontSize: 23.0),)
                         ],
                       ),
                     )
@@ -81,19 +81,14 @@ class _ColomboNawalapitiyaState extends State<ColomboNawalapitiya> {
                     child: Column(
                       children: [
                         SizedBox(height: 15.0,),
-                        Template('5.15 AM','8.45 AM'),
+                        Template('2.00 AM','5.00 AM'),
                         SizedBox(height: 15.0,),
-                        Template('5.45 AM','9.15 AM'),
+                        Template('2.45 AM','5.45 AM'),
                         SizedBox(height: 15.0,),
-                        Template('6.25.00 AM','9.55 AM'),
+                        Template('3.30 AM','6.30 AM'),
                         SizedBox(height: 15.0,),
-                        Template('10.00 AM','1.30 PM'),
+                        Template('5.00 AM','8.00 AM'),
                         SizedBox(height: 15.0,),
-                        Template('11.10 AM','2.40 PM'),
-                        SizedBox(height: 15.0,),
-                        Template('2.00 PM','5.30 PM'),
-                        SizedBox(height: 15.0,),
-
 
                         //colombo - kandy
 
