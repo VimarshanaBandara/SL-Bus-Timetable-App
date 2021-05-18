@@ -151,7 +151,7 @@ class _DpHomeState extends State<DpHome> {
     "Jaffna",//16
     "Kaduruwela",//17
     "Kalawana",//18
-    "Kalpitiya"//19
+    "Kalpitiya",//19
     "Kandy",//20
     "Kataragama",//21
     "Kegalle",//22

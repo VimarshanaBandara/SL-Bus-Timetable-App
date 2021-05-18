@@ -1,3 +1,4 @@
+import 'package:bus_timetable/dp_screen.dart';
 import 'package:bus_timetable/homeScreen.dart';
 import 'package:flutter/material.dart';
 class ColomboRathnapura extends StatefulWidget {
@@ -15,7 +16,7 @@ class _ColomboRathnapuraState extends State<ColomboRathnapura> {
           leading: IconButton(
             icon: Icon(Icons.arrow_back_ios_outlined,color: Colors.white,size: 30.0,),
             onPressed: (){
-              Navigator.push(context, MaterialPageRoute(builder: (context)=>HomePage()));
+              Navigator.push(context, MaterialPageRoute(builder: (context)=>DpHome()));
             },
           ),
         ),
