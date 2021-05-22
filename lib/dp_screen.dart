@@ -69,6 +69,7 @@ import 'package:bus_timetable/destinations/kalpitiya_colombo.dart';
 import 'package:bus_timetable/destinations/kalpitiya_negambo.dart';
 import 'package:bus_timetable/destinations/kandy_ampara.dart';
 import 'package:bus_timetable/destinations/kandy_anuradhapura.dart';
+import 'package:bus_timetable/destinations/kandy_colombo.dart';
 import 'package:bus_timetable/destinations/kandy_kegalle.dart';
 import 'package:bus_timetable/destinations/kandy_kurunegala.dart';
 import 'package:bus_timetable/destinations/kandy_matugama.dart';
@@ -234,6 +235,22 @@ class _DpHomeState extends State<DpHome> {
 
 
   ];
+  createAlertDialog(BuildContext context){
+
+    return showDialog(context : context ,builder:(context){
+      return AlertDialog(
+        title: Text('This schedule is not yet included.'),
+        actions: [
+          MaterialButton(
+            child: Text('Ok'),
+            onPressed: (){
+              Navigator.of(context).pop();
+            },
+          )
+        ],
+      );
+    });
+  }
 
 
   @override
@@ -259,6 +276,7 @@ class _DpHomeState extends State<DpHome> {
         body: SingleChildScrollView(
           child: Container(
             width: MediaQuery.of(context).size.width,
+
             decoration: BoxDecoration(
                 color: const Color(0xff7c94b6),
                 image: DecorationImage(
@@ -333,366 +351,362 @@ class _DpHomeState extends State<DpHome> {
                                 if(city_id1 == city1.elementAt(0) && city_id2 == city2.elementAt(11)){
                                   Navigator.push(context, MaterialPageRoute(builder: (context)=>AmbalangodaColombo()));}
 
-                                if(city_id1 == city1.elementAt(1) && city_id2 == city2.elementAt(11)){
+                               else if(city_id1 == city1.elementAt(1) && city_id2 == city2.elementAt(11)){
                                   Navigator.push(context, MaterialPageRoute(builder: (context)=>AmparaColombo()));}
 
-                                if(city_id1 == city1.elementAt(1) && city_id2 == city2.elementAt(24)){
+                               else if(city_id1 == city1.elementAt(1) && city_id2 == city2.elementAt(24)){
                                   Navigator.push(context, MaterialPageRoute(builder: (context)=>AmparaKandy()));}
 
-                                if(city_id1 == city1.elementAt(2) && city_id2 == city2.elementAt(11)){
+                               else if(city_id1 == city1.elementAt(2) && city_id2 == city2.elementAt(11)){
                                   Navigator.push(context, MaterialPageRoute(builder: (context)=>AnamaduwaColombo()));}
 
-                                if(city_id1 == city1.elementAt(3) && city_id2 == city2.elementAt(11)){
+                              else  if(city_id1 == city1.elementAt(3) && city_id2 == city2.elementAt(11)){
                                   Navigator.push(context, MaterialPageRoute(builder: (context)=>AnuradhapuraColombo()));}
 
-                                if(city_id1 == city1.elementAt(3) && city_id2 == city2.elementAt(24)){
+                               else if(city_id1 == city1.elementAt(3) && city_id2 == city2.elementAt(24)){
                                   Navigator.push(context, MaterialPageRoute(builder: (context)=>AnuradhapuraKandy()));}
 
-                                if(city_id1 == city1.elementAt(3) && city_id2 == city2.elementAt(42)){
+                               else if(city_id1 == city1.elementAt(3) && city_id2 == city2.elementAt(42)){
                                   Navigator.push(context, MaterialPageRoute(builder: (context)=>AnuradhapuraPanadura()));}
 
-                                if(city_id1 == city1.elementAt(1) && city_id2 == city2.elementAt(11)){
+                               else if(city_id1 == city1.elementAt(1) && city_id2 == city2.elementAt(11)){
                                   Navigator.push(context, MaterialPageRoute(builder: (context)=>AmparaColombo()));}
 
-                                if(city_id1 == city1.elementAt(3) && city_id2 == city2.elementAt(46)){
+                               else if(city_id1 == city1.elementAt(3) && city_id2 == city2.elementAt(46)){
                                   Navigator.push(context, MaterialPageRoute(builder: (context)=>AnuradhapuraTrincomalee()));}
 
-                                if(city_id1 == city1.elementAt(4) && city_id2 == city2.elementAt(11)){
+                              else  if(city_id1 == city1.elementAt(4) && city_id2 == city2.elementAt(11)){
                                   Navigator.push(context, MaterialPageRoute(builder: (context)=>BadullaColombo()));}
 
-                                if(city_id1 == city1.elementAt(5) && city_id2 == city2.elementAt(11)){
+                               else if(city_id1 == city1.elementAt(5) && city_id2 == city2.elementAt(11)){
                                   Navigator.push(context, MaterialPageRoute(builder: (context)=>BalangodaColombo()));}
 
-                                if(city_id1 == city1.elementAt(6) && city_id2 == city2.elementAt(30)){
+                               else if(city_id1 == city1.elementAt(6) && city_id2 == city2.elementAt(30)){
                                   Navigator.push(context, MaterialPageRoute(builder: (context)=>BattaramullaKurunegala()));}
 
-                                if(city_id1 == city1.elementAt(7) && city_id2 == city2.elementAt(11)){
+                               else if(city_id1 == city1.elementAt(7) && city_id2 == city2.elementAt(11)){
                                   Navigator.push(context, MaterialPageRoute(builder: (context)=>ChilawColombo()));}
 
-                                if(city_id1 == city1.elementAt(8) && city_id2 == city2.elementAt(0)){
+                               else if(city_id1 == city1.elementAt(8) && city_id2 == city2.elementAt(0)){
                                   Navigator.push(context, MaterialPageRoute(builder: (context)=>ColomboAkkaraipattu()));}
 
-                                if(city_id1 == city1.elementAt(8) && city_id2 == city2.elementAt(1)){
+                               else if(city_id1 == city1.elementAt(8) && city_id2 == city2.elementAt(1)){
                                   Navigator.push(context, MaterialPageRoute(builder: (context)=>ColomboAkuressa()));}
 
-                                if(city_id1 == city1.elementAt(8) && city_id2 == city2.elementAt(2)){
+                               else if(city_id1 == city1.elementAt(8) && city_id2 == city2.elementAt(2)){
                                   Navigator.push(context, MaterialPageRoute(builder: (context)=>ColomboAmbalangoda()));}
 
-                                if(city_id1 == city1.elementAt(8) && city_id2 == city2.elementAt(3)){
+                               else if(city_id1 == city1.elementAt(8) && city_id2 == city2.elementAt(3)){
                                   Navigator.push(context, MaterialPageRoute(builder: (context)=>ColomboAmpara()));}
 
-                                if(city_id1 == city1.elementAt(8) && city_id2 == city2.elementAt(4)){
+                               else if(city_id1 == city1.elementAt(8) && city_id2 == city2.elementAt(4)){
                                   Navigator.push(context, MaterialPageRoute(builder: (context)=>ColomboAnamaduwa()));}
 
-                                if(city_id1 == city1.elementAt(8) && city_id2 == city2.elementAt(5)){
+                               else if(city_id1 == city1.elementAt(8) && city_id2 == city2.elementAt(5)){
                                   Navigator.push(context, MaterialPageRoute(builder: (context)=>ColomboAnuradhapura()));}
 
-                                if(city_id1 == city1.elementAt(8) && city_id2 == city2.elementAt(6)){
+                               else if(city_id1 == city1.elementAt(8) && city_id2 == city2.elementAt(6)){
                                   Navigator.push(context, MaterialPageRoute(builder: (context)=>ColomboBadulla()));}
 
-                                if(city_id1 == city1.elementAt(8) && city_id2 == city2.elementAt(7)){
+                               else if(city_id1 == city1.elementAt(8) && city_id2 == city2.elementAt(7)){
                                   Navigator.push(context, MaterialPageRoute(builder: (context)=>ColomboBalangoda()));}
 
-                                if(city_id1 == city1.elementAt(8) && city_id2 == city2.elementAt(9)){
+                               else if(city_id1 == city1.elementAt(8) && city_id2 == city2.elementAt(9)){
                                   Navigator.push(context, MaterialPageRoute(builder: (context)=>ColomboBibila()));}
 
-                                if(city_id1 == city1.elementAt(8) && city_id2 == city2.elementAt(10)){
+                               else if(city_id1 == city1.elementAt(8) && city_id2 == city2.elementAt(10)){
                                   Navigator.push(context, MaterialPageRoute(builder: (context)=>ColomboChilaw()));}
 
-                                if(city_id1 == city1.elementAt(8) && city_id2 == city2.elementAt(12)){
+                               else if(city_id1 == city1.elementAt(8) && city_id2 == city2.elementAt(12)){
                                   Navigator.push(context, MaterialPageRoute(builder: (context)=>ColomboDeiyandara()));}
 
-                                if(city_id1 == city1.elementAt(8) && city_id2 == city2.elementAt(13)){
+                               else if(city_id1 == city1.elementAt(8) && city_id2 == city2.elementAt(13)){
                                   Navigator.push(context, MaterialPageRoute(builder: (context)=>ColomboDeniyaya()));}
 
-                                if(city_id1 == city1.elementAt(8) && city_id2 == city2.elementAt(14)){
+                               else if(city_id1 == city1.elementAt(8) && city_id2 == city2.elementAt(14)){
                                   Navigator.push(context, MaterialPageRoute(builder: (context)=>ColomboDigana()));}
 
-                                if(city_id1 == city1.elementAt(8) && city_id2 == city2.elementAt(15)){
+                               else if(city_id1 == city1.elementAt(8) && city_id2 == city2.elementAt(15)){
                                   Navigator.push(context, MaterialPageRoute(builder: (context)=>ColomboElpitiya()));}
 
-                                if(city_id1 == city1.elementAt(8) && city_id2 == city2.elementAt(16)){
+                               else if(city_id1 == city1.elementAt(8) && city_id2 == city2.elementAt(16)){
                                   Navigator.push(context, MaterialPageRoute(builder: (context)=>ColomboEmbilipitiya()));}
 
-                                if(city_id1 == city1.elementAt(8) && city_id2 == city2.elementAt(17)){
+                               else if(city_id1 == city1.elementAt(8) && city_id2 == city2.elementAt(17)){
                                   Navigator.push(context, MaterialPageRoute(builder: (context)=>ColomboGalenbidunuwewa()));}
 
-                                if(city_id1 == city1.elementAt(8) && city_id2 == city2.elementAt(18)){
+                               else if(city_id1 == city1.elementAt(8) && city_id2 == city2.elementAt(18)){
                                   Navigator.push(context, MaterialPageRoute(builder: (context)=>ColomboGalle()));}
 
-                                if(city_id1 == city1.elementAt(8) && city_id2 == city2.elementAt(19)){
+                               else if(city_id1 == city1.elementAt(8) && city_id2 == city2.elementAt(19)){
                                   Navigator.push(context, MaterialPageRoute(builder: (context)=>ColomboGalnewa()));}
 
-                                if(city_id1 == city1.elementAt(8) && city_id2 == city2.elementAt(20)){
+                               else if(city_id1 == city1.elementAt(8) && city_id2 == city2.elementAt(20)){
                                   Navigator.push(context, MaterialPageRoute(builder: (context)=>ColomboGampola()));}
 
-                                if(city_id1 == city1.elementAt(8) && city_id2 == city2.elementAt(21)){
+                               else if(city_id1 == city1.elementAt(8) && city_id2 == city2.elementAt(21)){
                                   Navigator.push(context, MaterialPageRoute(builder: (context)=>ColomboHatton()));}
 
-                                if(city_id1 == city1.elementAt(8) && city_id2 == city2.elementAt(22)){
+                               else if(city_id1 == city1.elementAt(8) && city_id2 == city2.elementAt(22)){
                                   Navigator.push(context, MaterialPageRoute(builder: (context)=>ColomboJaffna()));}
 
-                                if(city_id1 == city1.elementAt(8) && city_id2 == city2.elementAt(23)){
+                               else if(city_id1 == city1.elementAt(8) && city_id2 == city2.elementAt(23)){
                                   Navigator.push(context, MaterialPageRoute(builder: (context)=>ColomboKaduruwela()));}
 
-                                if(city_id1 == city1.elementAt(8) && city_id2 == city2.elementAt(25)){
+                               else if(city_id1 == city1.elementAt(8) && city_id2 == city2.elementAt(25)){
                                   Navigator.push(context, MaterialPageRoute(builder: (context)=>ColomboKalpitiya()));}
 
-                                if(city_id1 == city1.elementAt(8) && city_id2 == city2.elementAt(24)){
+                               else if(city_id1 == city1.elementAt(8) && city_id2 == city2.elementAt(24)){
                                   Navigator.push(context, MaterialPageRoute(builder: (context)=>ColomboKandy()));}
 
-                                if(city_id1 == city1.elementAt(8) && city_id2 == city2.elementAt(27)){
+                               else if(city_id1 == city1.elementAt(8) && city_id2 == city2.elementAt(27)){
                                   Navigator.push(context, MaterialPageRoute(builder: (context)=>ColomboKatharagama()));}
 
-                                if(city_id1 == city1.elementAt(8) && city_id2 == city2.elementAt(28)){
+                               else if(city_id1 == city1.elementAt(8) && city_id2 == city2.elementAt(28)){
                                   Navigator.push(context, MaterialPageRoute(builder: (context)=>ColomboKegalle()));}
 
-                                if(city_id1 == city1.elementAt(8) && city_id2 == city2.elementAt(29)){
+                               else if(city_id1 == city1.elementAt(8) && city_id2 == city2.elementAt(29)){
                                   Navigator.push(context, MaterialPageRoute(builder: (context)=>ColomboKuliyapitiya()));}
 
-                                if(city_id1 == city1.elementAt(8) && city_id2 == city2.elementAt(30)){
+                               else if(city_id1 == city1.elementAt(8) && city_id2 == city2.elementAt(30)){
                                   Navigator.push(context, MaterialPageRoute(builder: (context)=>ColomboKurunegala()));}
 
-                                if(city_id1 == city1.elementAt(8) && city_id2 == city2.elementAt(32)){
+                               else if(city_id1 == city1.elementAt(8) && city_id2 == city2.elementAt(32)){
                                   Navigator.push(context, MaterialPageRoute(builder: (context)=>ColomboMannar()));}
 
-                                if(city_id1 == city1.elementAt(8) && city_id2 == city2.elementAt(33)){
+                              else if(city_id1 == city1.elementAt(8) && city_id2 == city2.elementAt(33)){
                                   Navigator.push(context, MaterialPageRoute(builder: (context)=>ColomboMatale()));}
 
-                                if(city_id1 == city1.elementAt(8) && city_id2 == city2.elementAt(34)){
+                               else if(city_id1 == city1.elementAt(8) && city_id2 == city2.elementAt(34)){
                                   Navigator.push(context, MaterialPageRoute(builder: (context)=>ColomboMatara()));}
 
-                                if(city_id1 == city1.elementAt(8) && city_id2 == city2.elementAt(36)){
+                               else if(city_id1 == city1.elementAt(8) && city_id2 == city2.elementAt(36)){
                                   Navigator.push(context, MaterialPageRoute(builder: (context)=>ColomboMawanella()));}
 
-                                if(city_id1 == city1.elementAt(8) && city_id2 == city2.elementAt(37)){
+                               else if(city_id1 == city1.elementAt(8) && city_id2 == city2.elementAt(37)){
                                   Navigator.push(context, MaterialPageRoute(builder: (context)=>ColomboMonaragala()));}
 
-                                if(city_id1 == city1.elementAt(8) && city_id2 == city2.elementAt(38)){
+                               else if(city_id1 == city1.elementAt(8) && city_id2 == city2.elementAt(38)){
                                   Navigator.push(context, MaterialPageRoute(builder: (context)=>ColomboMutur()));}
 
-                                if(city_id1 == city1.elementAt(8) && city_id2 == city2.elementAt(39)){
+                               else if(city_id1 == city1.elementAt(8) && city_id2 == city2.elementAt(39)){
                                   Navigator.push(context, MaterialPageRoute(builder: (context)=>ColomboNawalapitiya()));}
 
-                                if(city_id1 == city1.elementAt(8) && city_id2 == city2.elementAt(41)){
+                               else if(city_id1 == city1.elementAt(8) && city_id2 == city2.elementAt(41)){
                                   Navigator.push(context, MaterialPageRoute(builder: (context)=>ColomboNuwaraeliya()));}
 
-                                if(city_id1 == city1.elementAt(8) && city_id2 == city2.elementAt(43)){
+                               else if(city_id1 == city1.elementAt(8) && city_id2 == city2.elementAt(43)){
                                   Navigator.push(context, MaterialPageRoute(builder: (context)=>ColomboPuttalam()));}
 
-                                if(city_id1 == city1.elementAt(8) && city_id2 == city2.elementAt(44)){
+                               else if(city_id1 == city1.elementAt(8) && city_id2 == city2.elementAt(44)){
                                   Navigator.push(context, MaterialPageRoute(builder: (context)=>ColomboRakwana()));}
 
-                                if(city_id1 == city1.elementAt(8) && city_id2 == city2.elementAt(45)){
+                               else if(city_id1 == city1.elementAt(8) && city_id2 == city2.elementAt(45)){
                                   Navigator.push(context, MaterialPageRoute(builder: (context)=>ColomboRathnapura()));}
 
-                                if(city_id1 == city1.elementAt(8) && city_id2 == city2.elementAt(46)){
+                               else if(city_id1 == city1.elementAt(8) && city_id2 == city2.elementAt(46)){
                                   Navigator.push(context, MaterialPageRoute(builder: (context)=>ColomboTrincomalee()));}
 
-                                if(city_id1 == city1.elementAt(8) && city_id2 == city2.elementAt(47)){
+                               else if(city_id1 == city1.elementAt(8) && city_id2 == city2.elementAt(47)){
                                   Navigator.push(context, MaterialPageRoute(builder: (context)=>ColomboUdugama()));}
 
-                                if(city_id1 == city1.elementAt(8) && city_id2 == city2.elementAt(48)){
+                               else if(city_id1 == city1.elementAt(8) && city_id2 == city2.elementAt(48)){
                                   Navigator.push(context, MaterialPageRoute(builder: (context)=>ColomboVavuniya()));}
 
-                                if(city_id1 == city1.elementAt(8) && city_id2 == city2.elementAt(49)){
+                               else if(city_id1 == city1.elementAt(8) && city_id2 == city2.elementAt(49)){
                                   Navigator.push(context, MaterialPageRoute(builder: (context)=>ColomboWarakapola()));}
 
-                                if(city_id1 == city1.elementAt(9) && city_id2 == city2.elementAt(11)){
+                               else if(city_id1 == city1.elementAt(9) && city_id2 == city2.elementAt(11)){
                                   Navigator.push(context, MaterialPageRoute(builder: (context)=>DeiyandaraColombo()));}
 
-                                if(city_id1 == city1.elementAt(10) && city_id2 == city2.elementAt(11)){
+                               else if(city_id1 == city1.elementAt(10) && city_id2 == city2.elementAt(11)){
                                   Navigator.push(context, MaterialPageRoute(builder: (context)=>ElpitiyaColombo()));}
 
-                                if(city_id1 == city1.elementAt(11) && city_id2 == city2.elementAt(11)){
+                               else if(city_id1 == city1.elementAt(11) && city_id2 == city2.elementAt(11)){
                                   Navigator.push(context, MaterialPageRoute(builder: (context)=>EmbilipitiyaMatara()));}
 
-                                if(city_id1 == city1.elementAt(12) && city_id2 == city2.elementAt(11)){
+                               else if(city_id1 == city1.elementAt(12) && city_id2 == city2.elementAt(11)){
                                   Navigator.push(context, MaterialPageRoute(builder: (context)=>GalenbidunuwewaColombo()));}
 
-                                if(city_id1 == city1.elementAt(13) && city_id2 == city2.elementAt(11)){
+                               else if(city_id1 == city1.elementAt(13) && city_id2 == city2.elementAt(11)){
                                   Navigator.push(context, MaterialPageRoute(builder: (context)=>GalleColombo()));}
 
-                                if(city_id1 == city1.elementAt(14) && city_id2 == city2.elementAt(11)){
+                               else if(city_id1 == city1.elementAt(14) && city_id2 == city2.elementAt(11)){
                                   Navigator.push(context, MaterialPageRoute(builder: (context)=>GalnewaColombo()));}
 
-                                if(city_id1 == city1.elementAt(15) && city_id2 == city2.elementAt(11)){
+                               else if(city_id1 == city1.elementAt(15) && city_id2 == city2.elementAt(11)){
                                   Navigator.push(context, MaterialPageRoute(builder: (context)=>GampolaColombo()));}
 
-                                if(city_id1 == city1.elementAt(16) && city_id2 == city2.elementAt(11)){
+                               else if(city_id1 == city1.elementAt(16) && city_id2 == city2.elementAt(11)){
                                   Navigator.push(context, MaterialPageRoute(builder: (context)=>JaffnaColombo()));}
 
-                                if(city_id1 == city1.elementAt(16) && city_id2 == city2.elementAt(46)){
+                               else if(city_id1 == city1.elementAt(16) && city_id2 == city2.elementAt(46)){
                                   Navigator.push(context, MaterialPageRoute(builder: (context)=>JaffnaTrincomalee()));}
 
-                                if(city_id1 == city1.elementAt(17) && city_id2 == city2.elementAt(31)){
+                               else if(city_id1 == city1.elementAt(17) && city_id2 == city2.elementAt(31)){
                                   Navigator.push(context, MaterialPageRoute(builder: (context)=>KaduruwelaMahiyanganaya()));}
 
-                                if(city_id1 == city1.elementAt(18) && city_id2 == city2.elementAt(35)){
+                               else if(city_id1 == city1.elementAt(18) && city_id2 == city2.elementAt(35)){
                                   Navigator.push(context, MaterialPageRoute(builder: (context)=>KalawanaMatugama()));}
 
-                                if(city_id1 == city1.elementAt(19) && city_id2 == city2.elementAt(11)){
+                               else if(city_id1 == city1.elementAt(19) && city_id2 == city2.elementAt(11)){
                                   Navigator.push(context, MaterialPageRoute(builder: (context)=>KalpitiyaColombo()));}
 
-                                if(city_id1 == city1.elementAt(19) && city_id2 == city2.elementAt(40)){
+                               else if(city_id1 == city1.elementAt(19) && city_id2 == city2.elementAt(40)){
                                   Navigator.push(context, MaterialPageRoute(builder: (context)=>KalpitiyaNegambo()));}
 
-                                if(city_id1 == city1.elementAt(20) && city_id2 == city2.elementAt(3)){
+                               else if(city_id1 == city1.elementAt(20) && city_id2 == city2.elementAt(3)){
                                   Navigator.push(context, MaterialPageRoute(builder: (context)=>KandyAmpara()));}
 
-                                if(city_id1 == city1.elementAt(20) && city_id2 == city2.elementAt(5)){
+                               else if(city_id1 == city1.elementAt(20) && city_id2 == city2.elementAt(5)){
                                   Navigator.push(context, MaterialPageRoute(builder: (context)=>KandyAnuradhapura()));}
 
-                                if(city_id1 == city1.elementAt(20) && city_id2 == city2.elementAt(28)){
+                               else if(city_id1 == city1.elementAt(20) && city_id2 == city2.elementAt(11)){
+                                  Navigator.push(context, MaterialPageRoute(builder: (context)=>KandyColombo()));}
+
+                               else if(city_id1 == city1.elementAt(20) && city_id2 == city2.elementAt(28)){
                                   Navigator.push(context, MaterialPageRoute(builder: (context)=>KandyKegalle()));}
 
-                                if(city_id1 == city1.elementAt(20) && city_id2 == city2.elementAt(30)){
+                               else if(city_id1 == city1.elementAt(20) && city_id2 == city2.elementAt(30)){
                                   Navigator.push(context, MaterialPageRoute(builder: (context)=>KandyKurunegala()));}
 
-                                if(city_id1 == city1.elementAt(20) && city_id2 == city2.elementAt(35)){
+                               else if(city_id1 == city1.elementAt(20) && city_id2 == city2.elementAt(35)){
                                   Navigator.push(context, MaterialPageRoute(builder: (context)=>KandyMatugama()));}
 
-                                if(city_id1 == city1.elementAt(20) && city_id2 == city2.elementAt(36)){
+                               else if(city_id1 == city1.elementAt(20) && city_id2 == city2.elementAt(36)){
                                   Navigator.push(context, MaterialPageRoute(builder: (context)=>KandyMawanella()));}
 
-                                if(city_id1 == city1.elementAt(20) && city_id2 == city2.elementAt(40)){
+                               else if(city_id1 == city1.elementAt(20) && city_id2 == city2.elementAt(40)){
                                   Navigator.push(context, MaterialPageRoute(builder: (context)=>KandyNegambo()));}
 
-                                if(city_id1 == city1.elementAt(20) && city_id2 == city2.elementAt(42)){
+                               else if(city_id1 == city1.elementAt(20) && city_id2 == city2.elementAt(42)){
                                   Navigator.push(context, MaterialPageRoute(builder: (context)=>KandyPanadura()));}
 
-                                if(city_id1 == city1.elementAt(20) && city_id2 == city2.elementAt(48)){
+                               else if(city_id1 == city1.elementAt(20) && city_id2 == city2.elementAt(48)){
                                   Navigator.push(context, MaterialPageRoute(builder: (context)=>KandyVavuniya()));}
 
-                                if(city_id1 == city1.elementAt(21) && city_id2 == city2.elementAt(11)){
+                               else if(city_id1 == city1.elementAt(21) && city_id2 == city2.elementAt(11)){
                                   Navigator.push(context, MaterialPageRoute(builder: (context)=>KatharagamaColombo()));}
 
-                                if(city_id1 == city1.elementAt(22) && city_id2 == city2.elementAt(11)){
+                               else if(city_id1 == city1.elementAt(22) && city_id2 == city2.elementAt(11)){
                                   Navigator.push(context, MaterialPageRoute(builder: (context)=>KegalleColombo()));}
 
-                                if(city_id1 == city1.elementAt(22) && city_id2 == city2.elementAt(24)){
+                               else if(city_id1 == city1.elementAt(22) && city_id2 == city2.elementAt(24)){
                                   Navigator.push(context, MaterialPageRoute(builder: (context)=>KegalleKandy()));}
 
-                                if(city_id1 == city1.elementAt(23) && city_id2 == city2.elementAt(11)){
+                               else if(city_id1 == city1.elementAt(23) && city_id2 == city2.elementAt(11)){
                                   Navigator.push(context, MaterialPageRoute(builder: (context)=>KuliyapitiyaColombo()));}
 
-                                if(city_id1 == city1.elementAt(24) && city_id2 == city2.elementAt(8)){
+                               else if(city_id1 == city1.elementAt(24) && city_id2 == city2.elementAt(8)){
                                   Navigator.push(context, MaterialPageRoute(builder: (context)=>KurunegalaBattaramulla()));}
 
-                                if(city_id1 == city1.elementAt(24) && city_id2 == city2.elementAt(11)){
+                               else if(city_id1 == city1.elementAt(24) && city_id2 == city2.elementAt(11)){
                                   Navigator.push(context, MaterialPageRoute(builder: (context)=>KurunegalaColombo()));}
 
-                                if(city_id1 == city1.elementAt(24) && city_id2 == city2.elementAt(24)){
+                               else if(city_id1 == city1.elementAt(24) && city_id2 == city2.elementAt(24)){
                                   Navigator.push(context, MaterialPageRoute(builder: (context)=>KurunegalaKandy()));}
 
-                                if(city_id1 == city1.elementAt(24) && city_id2 == city2.elementAt(42)){
+                               else if(city_id1 == city1.elementAt(24) && city_id2 == city2.elementAt(42)){
                                   Navigator.push(context, MaterialPageRoute(builder: (context)=>KurunegalaPanadura()));}
 
-                                if(city_id1 == city1.elementAt(24) && city_id2 == city2.elementAt(46)){
+                               else if(city_id1 == city1.elementAt(24) && city_id2 == city2.elementAt(46)){
                                   Navigator.push(context, MaterialPageRoute(builder: (context)=>KurunegalaTrincomalee()));}
 
-                                if(city_id1 == city1.elementAt(25) && city_id2 == city2.elementAt(23)){
+                               else if(city_id1 == city1.elementAt(25) && city_id2 == city2.elementAt(23)){
                                   Navigator.push(context, MaterialPageRoute(builder: (context)=>MahiyanganayaKaduruwela()));}
 
-                                if(city_id1 == city1.elementAt(26) && city_id2 == city2.elementAt(11)){
+                               else if(city_id1 == city1.elementAt(26) && city_id2 == city2.elementAt(11)){
                                   Navigator.push(context, MaterialPageRoute(builder: (context)=>MannarColombo()));}
 
-                                if(city_id1 == city1.elementAt(27) && city_id2 == city2.elementAt(11)){
+                               else if(city_id1 == city1.elementAt(27) && city_id2 == city2.elementAt(11)){
                                   Navigator.push(context, MaterialPageRoute(builder: (context)=>MataraColombo()));}
 
-                                if(city_id1 == city1.elementAt(27) && city_id2 == city2.elementAt(16)){
+                               else if(city_id1 == city1.elementAt(27) && city_id2 == city2.elementAt(16)){
                                   Navigator.push(context, MaterialPageRoute(builder: (context)=>MataraEmbilipitiya()));}
 
-                                if(city_id1 == city1.elementAt(27) && city_id2 == city2.elementAt(37)){
+                               else if(city_id1 == city1.elementAt(27) && city_id2 == city2.elementAt(37)){
                                   Navigator.push(context, MaterialPageRoute(builder: (context)=>MataraMonaragala()));}
 
-                                if(city_id1 == city1.elementAt(27) && city_id2 == city2.elementAt(42)){
+                               else if(city_id1 == city1.elementAt(27) && city_id2 == city2.elementAt(42)){
                                   Navigator.push(context, MaterialPageRoute(builder: (context)=>MataraPanadura()));}
 
-                                if(city_id1 == city1.elementAt(28) && city_id2 == city2.elementAt(26)){
+                               else if(city_id1 == city1.elementAt(28) && city_id2 == city2.elementAt(26)){
                                   Navigator.push(context, MaterialPageRoute(builder: (context)=>MatugamaKalawana()));}
 
-                                if(city_id1 == city1.elementAt(28) && city_id2 == city2.elementAt(24)){
+                               else if(city_id1 == city1.elementAt(28) && city_id2 == city2.elementAt(24)){
                                   Navigator.push(context, MaterialPageRoute(builder: (context)=>MatugamaKandy()));}
 
-                                if(city_id1 == city1.elementAt(29) && city_id2 == city2.elementAt(11)){
+                               else if(city_id1 == city1.elementAt(29) && city_id2 == city2.elementAt(11)){
                                   Navigator.push(context, MaterialPageRoute(builder: (context)=>MawanellaColombo()));}
 
-                                if(city_id1 == city1.elementAt(29) && city_id2 == city2.elementAt(24)){
+                               else if(city_id1 == city1.elementAt(29) && city_id2 == city2.elementAt(24)){
                                   Navigator.push(context, MaterialPageRoute(builder: (context)=>MawanellaKandy()));}
 
-                                if(city_id1 == city1.elementAt(30) && city_id2 == city2.elementAt(11)){
+                               else if(city_id1 == city1.elementAt(30) && city_id2 == city2.elementAt(11)){
                                   Navigator.push(context, MaterialPageRoute(builder: (context)=>MonaragalaColombo()));}
 
-                                if(city_id1 == city1.elementAt(30) && city_id2 == city2.elementAt(34)){
+                               else if(city_id1 == city1.elementAt(30) && city_id2 == city2.elementAt(34)){
                                   Navigator.push(context, MaterialPageRoute(builder: (context)=>MonaragalaMatara()));}
 
-                                if(city_id1 == city1.elementAt(31) && city_id2 == city2.elementAt(11)){
+                               else if(city_id1 == city1.elementAt(31) && city_id2 == city2.elementAt(11)){
                                   Navigator.push(context, MaterialPageRoute(builder: (context)=>MuturColombo()));}
 
-                                if(city_id1 == city1.elementAt(32) && city_id2 == city2.elementAt(11)){
+                               else if(city_id1 == city1.elementAt(32) && city_id2 == city2.elementAt(11)){
                                   Navigator.push(context, MaterialPageRoute(builder: (context)=>NawalapitiyaColombo()));}
 
-                                if(city_id1 == city1.elementAt(33) && city_id2 == city2.elementAt(25)){
+                               else if(city_id1 == city1.elementAt(33) && city_id2 == city2.elementAt(25)){
                                   Navigator.push(context, MaterialPageRoute(builder: (context)=>NegamboKalpitiya()));}
 
-                                if(city_id1 == city1.elementAt(33) && city_id2 == city2.elementAt(24)){
+                               else if(city_id1 == city1.elementAt(33) && city_id2 == city2.elementAt(24)){
                                   Navigator.push(context, MaterialPageRoute(builder: (context)=>NegamboKandy()));}
 
-                                if(city_id1 == city1.elementAt(34) && city_id2 == city2.elementAt(24)){
+                               else if(city_id1 == city1.elementAt(34) && city_id2 == city2.elementAt(24)){
                                   Navigator.push(context, MaterialPageRoute(builder: (context)=>PanaduraKandy()));}
 
-                                if(city_id1 == city1.elementAt(34) && city_id2 == city2.elementAt(30)){
+                               else if(city_id1 == city1.elementAt(34) && city_id2 == city2.elementAt(30)){
                                   Navigator.push(context, MaterialPageRoute(builder: (context)=>PanaduraKurunegala()));}
 
-                                if(city_id1 == city1.elementAt(34) && city_id2 == city2.elementAt(34)){
+                               else if(city_id1 == city1.elementAt(34) && city_id2 == city2.elementAt(34)){
                                   Navigator.push(context, MaterialPageRoute(builder: (context)=>PanaduraMatara()));}
 
-                                if(city_id1 == city1.elementAt(35) && city_id2 == city2.elementAt(11)){
+                               else if(city_id1 == city1.elementAt(35) && city_id2 == city2.elementAt(11)){
                                   Navigator.push(context, MaterialPageRoute(builder: (context)=>PuttalamColombo()));}
 
-                                if(city_id1 == city1.elementAt(36) && city_id2 == city2.elementAt(34)){
+                              else if(city_id1 == city1.elementAt(36) && city_id2 == city2.elementAt(34)){
                                   Navigator.push(context, MaterialPageRoute(builder: (context)=>RathnapuraMatara()));}
 
-                                if(city_id1 == city1.elementAt(37) && city_id2 == city2.elementAt(5)){
+                               else if(city_id1 == city1.elementAt(37) && city_id2 == city2.elementAt(5)){
                                   Navigator.push(context, MaterialPageRoute(builder: (context)=>TrincomaleeAnuradhapura()));}
 
-                                if(city_id1 == city1.elementAt(37) && city_id2 == city2.elementAt(11)){
+                               else if(city_id1 == city1.elementAt(37) && city_id2 == city2.elementAt(11)){
                                   Navigator.push(context, MaterialPageRoute(builder: (context)=>TrincomaleeColombo()));}
 
-                                if(city_id1 == city1.elementAt(37) && city_id2 == city2.elementAt(22)){
+                               else if(city_id1 == city1.elementAt(37) && city_id2 == city2.elementAt(22)){
                                   Navigator.push(context, MaterialPageRoute(builder: (context)=>TrincomaleeJaffna()));}
 
-                                if(city_id1 == city1.elementAt(37) && city_id2 == city2.elementAt(24)){
+                               else if(city_id1 == city1.elementAt(37) && city_id2 == city2.elementAt(24)){
                                   Navigator.push(context, MaterialPageRoute(builder: (context)=>TrincomaleeKandy()));}
 
-                                if(city_id1 == city1.elementAt(37) && city_id2 == city2.elementAt(30)){
+                               else if(city_id1 == city1.elementAt(37) && city_id2 == city2.elementAt(30)){
                                   Navigator.push(context, MaterialPageRoute(builder: (context)=>TrincomaleeKurunegala()));}
 
-                                if(city_id1 == city1.elementAt(37) && city_id2 == city2.elementAt(48)){
+                               else if(city_id1 == city1.elementAt(37) && city_id2 == city2.elementAt(48)){
                                   Navigator.push(context, MaterialPageRoute(builder: (context)=>TrincomaleeVavuniya()));}
 
-                                if(city_id1 == city1.elementAt(38) && city_id2 == city2.elementAt(47)){
+                               else if(city_id1 == city1.elementAt(38) && city_id2 == city2.elementAt(47)){
                                   Navigator.push(context, MaterialPageRoute(builder: (context)=>UdugamaColombo()));}
 
-                                if(city_id1 == city1.elementAt(39) && city_id2 == city2.elementAt(11)){
+                               else if(city_id1 == city1.elementAt(39) && city_id2 == city2.elementAt(11)){
                                   Navigator.push(context, MaterialPageRoute(builder: (context)=>VavuniyaColombo()));}
 
-                                if(city_id1 == city1.elementAt(39) && city_id2 == city2.elementAt(24)){
+                               else if(city_id1 == city1.elementAt(39) && city_id2 == city2.elementAt(24)){
                                   Navigator.push(context, MaterialPageRoute(builder: (context)=>VavuniyaKandy()));}
 
-                                if(city_id1 == city1.elementAt(39) && city_id2 == city2.elementAt(46)){
+                               else if(city_id1 == city1.elementAt(39) && city_id2 == city2.elementAt(46)){
                                   Navigator.push(context, MaterialPageRoute(builder: (context)=>VavuniyaTrincomalee()));}
-
-                                 else {}
-
-
-
-
-
-
-
-
+                                 else{
+                                  createAlertDialog(context);
+                                }
 
                               },
                             ),
@@ -726,7 +740,7 @@ class _DpHomeState extends State<DpHome> {
 
                            RaisedButton(
                              color: Colors.redAccent,
-                             child: Text('Extra Library',style: TextStyle(color:Colors.white,fontSize: 22.0,fontWeight: FontWeight.bold),),
+                             child: Text('Library',style: TextStyle(color:Colors.white,fontSize: 22.0,fontWeight: FontWeight.bold),),
                              onPressed: (){
                                 Navigator.push(context, MaterialPageRoute(builder: (context)=>HomePage()));
                              },
@@ -775,6 +789,7 @@ class _DpHomeState extends State<DpHome> {
 
 
 
+
                 ]),
           ),
 
@@ -801,15 +816,15 @@ class _DpHomeState extends State<DpHome> {
                         height: 160.0,
                         decoration: BoxDecoration(
                             image: DecorationImage(
-                              image: AssetImage('images/logo.png',),
+                              image: AssetImage('images/icon.png',),
                               fit: BoxFit.cover,
                             )
                         ),
                       ),
                     ),
                     SizedBox(height: 10.0,),
-                    Text('Sl Bus TimeTable',style: TextStyle(fontSize: 22.0,color: Colors.white,fontWeight: FontWeight.bold),),
-                    Text('Powered by VM Mobile',style: TextStyle(fontSize: 20.0,color: Colors.white,fontWeight: FontWeight.bold),),
+                    Text('SL BUS TIMETABLE',style: TextStyle(fontSize: 20.0,color: Colors.white,fontWeight: FontWeight.bold),),
+                    Text('Powered by VM Mobile',style: TextStyle(fontSize: 17.0,color: Colors.white,fontWeight: FontWeight.bold),),
                   ],
                 ),
               ),
@@ -856,3 +871,4 @@ class _DpHomeState extends State<DpHome> {
     );
   }
 }
+

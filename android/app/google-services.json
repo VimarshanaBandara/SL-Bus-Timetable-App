@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "425910136085",
+    "project_id": "bustimetable-3e494",
+    "storage_bucket": "bustimetable-3e494.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:425910136085:android:ee173c55c26ee98ed90d1c",
+        "android_client_info": {
+          "package_name": "com.busvmm.bus_timetable"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "425910136085-45do1loqqedmnjecm6boj998n0qcqdjq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBiZIu8yjY_Babd5xfsKqXFvIBBGPqFTHM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "425910136085-45do1loqqedmnjecm6boj998n0qcqdjq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
