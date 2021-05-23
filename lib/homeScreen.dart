@@ -116,6 +116,7 @@ import 'package:bus_timetable/destinations/udugama_colombo.dart';
 import 'package:bus_timetable/destinations/vavuniya_colombo.dart';
 import 'package:bus_timetable/destinations/vavuniya_kandy.dart';
 import 'package:bus_timetable/destinations/vavuniya_trincomalee.dart';
+import 'package:bus_timetable/dp_screen.dart';
 import 'package:flutter/material.dart';
 class HomePage extends StatefulWidget {
   @override
@@ -128,6 +129,13 @@ class _HomePageState extends State<HomePage> {
     return Scaffold(
       appBar: AppBar(
         title: Text('Sl Bus TimeTable'),
+        leading: IconButton(
+          icon: Icon(Icons.arrow_back),
+          onPressed: (){
+            Navigator.push(context, MaterialPageRoute(builder: (context)=>DpHome()));
+          },
+        ),
+
 
       ),
       body:  SingleChildScrollView(
@@ -2019,8 +2027,8 @@ class _HomePageState extends State<HomePage> {
                             crossAxisAlignment:
                             CrossAxisAlignment.start,
                             children: <Widget>[
-                              Text('Kaduruwela - Mahiyanganaya',style: TextStyle(color: Colors.black,fontWeight: FontWeight.bold,fontSize: 17.0),),
-                              Text('කදුරුවෙල - මහියංගණය', style: TextStyle(color: Colors.grey,fontWeight: FontWeight.bold,fontSize: 17.0),)
+                              Text('Kaduruwela - Mahiyanganaya',style: TextStyle(color: Colors.black,fontWeight: FontWeight.bold,fontSize: 14.0),),
+                              Text('කදුරුවෙල - මහියංගණය', style: TextStyle(color: Colors.grey,fontWeight: FontWeight.bold,fontSize: 15.0),)
                             ],
                           ),
                         ),
@@ -2065,8 +2073,8 @@ class _HomePageState extends State<HomePage> {
                             crossAxisAlignment:
                             CrossAxisAlignment.start,
                             children: <Widget>[
-                              Text('Mahiyanganaya - Kaduruwela',style: TextStyle(color: Colors.black,fontWeight: FontWeight.bold,fontSize: 17.0),),
-                              Text('මහියංගණය - කදුරුවෙල', style: TextStyle(color: Colors.grey,fontWeight: FontWeight.bold,fontSize: 17.0),)
+                              Text('Mahiyanganaya - Kaduruwela',style: TextStyle(color: Colors.black,fontWeight: FontWeight.bold,fontSize: 14.0),),
+                              Text('මහියංගණය - කදුරුවෙල', style: TextStyle(color: Colors.grey,fontWeight: FontWeight.bold,fontSize: 15.0),)
                             ],
                           ),
                         ),
@@ -4549,8 +4557,8 @@ class _HomePageState extends State<HomePage> {
                             crossAxisAlignment:
                             CrossAxisAlignment.start,
                             children: <Widget>[
-                              Text('Colombo - Galenbidunuwewa',style: TextStyle(color: Colors.black,fontWeight: FontWeight.bold,fontSize: 17.0),),
-                              Text('කොළඹ - ගලෙන්බිඳුනුවැව', style: TextStyle(color: Colors.grey,fontWeight: FontWeight.bold,fontSize: 17.0),)
+                              Text('Colombo - Galenbidunuwewa',style: TextStyle(color: Colors.black,fontWeight: FontWeight.bold,fontSize: 14.0),),
+                              Text('කොළඹ - ගලෙන්බිඳුනුවැව', style: TextStyle(color: Colors.grey,fontWeight: FontWeight.bold,fontSize: 15.0),)
                             ],
                           ),
                         ),
@@ -4595,8 +4603,8 @@ class _HomePageState extends State<HomePage> {
                             crossAxisAlignment:
                             CrossAxisAlignment.start,
                             children: <Widget>[
-                              Text('Galenbidunuwewa - Colombo',style: TextStyle(color: Colors.black,fontWeight: FontWeight.bold,fontSize: 17.0),),
-                              Text('ගලෙන්බිඳුනුවැව - කොළඹ', style: TextStyle(color: Colors.grey,fontWeight: FontWeight.bold,fontSize: 17.0),)
+                              Text('Galenbidunuwewa - Colombo',style: TextStyle(color: Colors.black,fontWeight: FontWeight.bold,fontSize: 14.0),),
+                              Text('ගලෙන්බිඳුනුවැව - කොළඹ', style: TextStyle(color: Colors.grey,fontWeight: FontWeight.bold,fontSize: 15.0),)
                             ],
                           ),
                         ),
@@ -4963,8 +4971,8 @@ class _HomePageState extends State<HomePage> {
                             crossAxisAlignment:
                             CrossAxisAlignment.start,
                             children: <Widget>[
-                              Text('Anuradhapura - Trincomalee',style: TextStyle(color: Colors.black,fontWeight: FontWeight.bold,fontSize: 17.0),),
-                              Text('අනුරාධපුර - ත්‍රිකුණාමලය', style: TextStyle(color: Colors.grey,fontWeight: FontWeight.bold,fontSize: 17.0),)
+                              Text('Anuradhapura - Trincomalee',style: TextStyle(color: Colors.black,fontWeight: FontWeight.bold,fontSize: 14.0),),
+                              Text('අනුරාධපුර - ත්‍රිකුණාමලය', style: TextStyle(color: Colors.grey,fontWeight: FontWeight.bold,fontSize: 15.0),)
                             ],
                           ),
                         ),
@@ -5009,8 +5017,8 @@ class _HomePageState extends State<HomePage> {
                             crossAxisAlignment:
                             CrossAxisAlignment.start,
                             children: <Widget>[
-                              Text('Trincomalee - Anuradhapura',style: TextStyle(color: Colors.black,fontWeight: FontWeight.bold,fontSize: 17.0),),
-                              Text('ත්‍රිකුණාමලය - අනුරාධපුර', style: TextStyle(color: Colors.grey,fontWeight: FontWeight.bold,fontSize: 17.0),)
+                              Text('Trincomalee - Anuradhapura',style: TextStyle(color: Colors.black,fontWeight: FontWeight.bold,fontSize: 14.0),),
+                              Text('ත්‍රිකුණාමලය - අනුරාධපුර', style: TextStyle(color: Colors.grey,fontWeight: FontWeight.bold,fontSize: 15.0),)
                             ],
                           ),
                         ),

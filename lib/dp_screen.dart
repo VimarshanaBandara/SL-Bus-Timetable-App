@@ -118,6 +118,7 @@ import 'package:bus_timetable/destinations/vavuniya_colombo.dart';
 import 'package:bus_timetable/destinations/vavuniya_kandy.dart';
 import 'package:bus_timetable/destinations/vavuniya_trincomalee.dart';
 import 'package:bus_timetable/homeScreen.dart';
+import 'package:bus_timetable/privacy_screen.dart';
 import 'package:dropdownfield/dropdownfield.dart';
 import 'package:flutter/material.dart';
 class DpHome extends StatefulWidget {
@@ -242,6 +243,7 @@ class _DpHomeState extends State<DpHome> {
         title: Text('This schedule is not yet included.'),
         actions: [
           MaterialButton(
+            color: Colors.green,
             child: Text('Ok'),
             onPressed: (){
               Navigator.of(context).pop();
@@ -302,6 +304,7 @@ class _DpHomeState extends State<DpHome> {
                       required: false,
                       hintText: 'Select the city',
                       labelText: 'From',
+                      labelStyle: TextStyle(fontWeight: FontWeight.bold,fontSize: 20.0),
                       items: city1,
                     ),
                   ),
@@ -316,6 +319,7 @@ class _DpHomeState extends State<DpHome> {
                       required: false,
                       hintText: 'Select the city',
                       labelText: 'To',
+                      labelStyle: TextStyle(fontWeight: FontWeight.bold,fontSize: 20.0),
                       items: city2,
 
                     ),
@@ -718,7 +722,7 @@ class _DpHomeState extends State<DpHome> {
                     ),
                   ),
 
-                  SizedBox(height: 40.0,),
+                  SizedBox(height: 35.0,),
 
                   Padding(
                     padding: EdgeInsets.symmetric(
@@ -751,7 +755,7 @@ class _DpHomeState extends State<DpHome> {
                       ),
                     ),
                   ),
-                  SizedBox(height: 40.0,),
+                  SizedBox(height: 35.0,),
 
                   Padding(
                     padding: EdgeInsets.symmetric(
@@ -836,7 +840,7 @@ class _DpHomeState extends State<DpHome> {
                 trailing: IconButton(
                   icon: Icon(Icons.menu),
                   onPressed: (){
-                    // Navigator.push(context, MaterialPageRoute(builder: (context)=>PrivacyHome()));
+                    Navigator.push(context, MaterialPageRoute(builder: (context)=>PrivacyHome()));
                   },
                 ),
               ),
@@ -844,7 +848,7 @@ class _DpHomeState extends State<DpHome> {
 
               ListTile(
                 leading: Icon(Icons.book_online),
-                title: Text('Extra Library',style: TextStyle(fontSize: 16.0,fontWeight: FontWeight.bold,color: Colors.grey),),
+                title: Text('Library',style: TextStyle(fontSize: 16.0,fontWeight: FontWeight.bold,color: Colors.grey),),
                 trailing: IconButton(
                   icon: Icon(Icons.menu),
                   onPressed: (){
